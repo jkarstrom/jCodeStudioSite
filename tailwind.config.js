@@ -13,6 +13,7 @@ module.exports = {
       lightpurple: '#e9e2ee',
       darkpurple: '#a99abd',
       whitepurple: '#faf7ff',
+      pink: '#eedbe6'
     }
   },
   plugins: [],

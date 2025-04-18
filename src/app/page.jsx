@@ -1,11 +1,12 @@
 import Image from "next/image";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Hero from "./components/page/Hero";
+import AdventureCards from "./components/page/AdventureCards";
 
 export default function Home() {
   return (
     <div className="w-screen">
-      This is a test for my home screen
+      <Hero />
+      <AdventureCards />
     </div>
   );
 }
