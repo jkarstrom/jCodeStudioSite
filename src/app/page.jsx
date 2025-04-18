@@ -5,11 +5,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <div className="w-screen">
-      <Header />
-      <main className="mt-16"> 
-        
-      </main>
-      <Footer />
+      This is a test for my home screen
     </div>
   );
 }

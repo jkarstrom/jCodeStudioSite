@@ -1,18 +1,17 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --lightpurple: #e9e2ee;
-  --darkpurple: #a99abd;
-  --whitepurple: #faf7ff;
-  --grey: #f1f2f2;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: 'Be Vietnam Pro', sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
