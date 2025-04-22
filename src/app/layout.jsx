@@ -23,7 +23,10 @@ const beVietnamPro = Be_Vietnam_Pro({
 
 export const metadata = {
   title: "jCode Studio",
-  description: "Created by Joan Karstrom",
+  description: "jCode studio created by Joan Karstrom",
+  icons: {
+    icon: './logos/Favicon.svg',
+  },
 };
 
 export default function RootLayout({ children }) {
