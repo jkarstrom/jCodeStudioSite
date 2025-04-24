@@ -5,7 +5,10 @@ import ClientOnly from '../ClientOnly';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen px-6 py-12 md:py-20 flex flex-col justify-center items-center text-center bg-pur">
+    <section
+      className="px-6 py-10 md:py-16 flex flex-col justify-center items-center text-center bg-pur"
+      style={{ minHeight: 'calc(100vh - 7rem)' }}
+    >
       <h1 className="text-3xl md:text-6xl leading-tight font-vietnam text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
         <ClientOnly>
           <Typewriter
