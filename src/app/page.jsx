@@ -5,7 +5,7 @@ import TestimonialCard from "../components/page/TestimonialCard";
 
 export default function Home() {
   return (
-    <div className="w-screen">
+    <div className="min-h-screen w-screen">
       <Hero />
 
       <AdventureCards />

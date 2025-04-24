@@ -23,11 +23,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="overflow-x-hidden w-screen h-full">
       <body className={`${beVietnamPro.variable} font-vietnam h-full`}>
-        <Header />
-        <main className="flex flex-col flex-grow w-full min-h-screen">
-          {children}
-        </main>
-        <Footer />
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow w-full">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
