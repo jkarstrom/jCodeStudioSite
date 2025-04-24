@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { JourneyTimeline } from '../components/page/JourneyTimeline';
+import { JourneyTimeline } from '../../components/page/JourneyTimeline';
 
 export default function About() {
     return (
