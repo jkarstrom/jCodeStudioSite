@@ -83,23 +83,50 @@ export default function ServicesPage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-[#ffffff] shadow-xl rounded-3xl p-6 border" style={{ borderColor: '#ddd6fe' }}>
-                <h3 className="text-xl font-semibold mb-2" style={{ color: '#ec4899' }}>Clean Layouts</h3>
-                <p className="text-[#444444]">
-                Thoughtful spacing, balance, and typography that invites users to explore.
-                </p>
-            </div>
+                <div className="bg-[#ffffff] shadow-xl rounded-3xl p-6 border" style={{ borderColor: '#ddd6fe' }}>
+                    <h3 className="text-xl font-semibold mb-2" style={{ color: '#ec4899' }}>Clean Layouts</h3>
+                    <p className="text-[#444444]">
+                    Thoughtful spacing, balance, and typography that invites users to explore. The user's journey is at the heart of every design decision.
+                    </p>
+                </div>
 
-            <div className="bg-[#ffffff] shadow-xl rounded-3xl p-6 border" style={{ borderColor: '#f9a8d4' }}>
-                <h3 className="text-xl font-semibold mb-2" style={{ color: '#8b5cf6' }}>Brand-Driven Color</h3>
-                <p className="text-[#444444]">
-                Colors that reinforce emotion and make your brand memorable and distinct.
-                </p>
-            </div>
+                <div className="bg-[#ffffff] shadow-xl rounded-3xl p-6 border" style={{ borderColor: '#f9a8d4' }}>
+                    <h3 className="text-xl font-semibold mb-2" style={{ color: '#8b5cf6' }}>Brand-Driven Color</h3>
+                    <p className="text-[#444444]">
+                    Colors that reinforce emotion and make your brand memorable and distinct.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
+    <section className="w-full bg-[#f9fafb] py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-vietnam font-bold text-[#111827] mb-6">
+            UI/UX Strategy & Implementation
+            </h2>
+            <p className="text-lg text-[#4b5563] max-w-3xl mb-14">
+            From wireframes to real-world interactions, I create digital experiences that are intuitive, accessible, and centered around the user’s journey.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8 text-center">
+                <div className="bg-white border border-[#e5e7eb] p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <h3 className="text-xl font-semibold text-[#111827] mb-2">🔍 Research</h3>
+                    <p className="text-[#6b7280]">Understanding user behavior, goals, and obstacles before anything else.</p>
+                </div>
+
+                <div className="bg-white border border-[#e5e7eb] p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <h3 className="text-xl font-semibold text-[#111827] mb-2">📐 Wireframing</h3>
+                    <p className="text-[#6b7280]">Sketching out intuitive interfaces and streamlined user flows before diving into design.</p>
+                </div>
+
+                <div className="bg-white border border-[#e5e7eb] p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <h3 className="text-xl font-semibold text-[#111827] mb-2">🧪 Implementation</h3>
+                    <p className="text-[#6b7280]">Turning structure into reality — clean, accessible code meets thoughtful interaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     </main>
   );
