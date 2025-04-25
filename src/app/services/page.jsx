@@ -101,32 +101,80 @@ export default function ServicesPage() {
     </section>
 
     <section className="w-full bg-[#f9fafb] py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-vietnam font-bold text-[#111827] mb-6">
+      <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-vietnam font-bold text-[#111827] mb-6">
             UI/UX Strategy & Implementation
-            </h2>
-            <p className="text-lg text-[#4b5563] max-w-3xl mb-14">
+          </h2>
+          <p className="text-lg text-[#4b5563] max-w-3xl mb-14">
             From wireframes to real-world interactions, I create digital experiences that are intuitive, accessible, and centered around the user’s journey.
-            </p>
+          </p>
 
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-                <div className="bg-white border border-[#e5e7eb] p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                    <h3 className="text-xl font-semibold text-[#111827] mb-2">🔍 Research</h3>
-                    <p className="text-[#6b7280]">Understanding user behavior, goals, and obstacles before anything else.</p>
-                </div>
-
-                <div className="bg-white border border-[#e5e7eb] p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                    <h3 className="text-xl font-semibold text-[#111827] mb-2">📐 Wireframing</h3>
-                    <p className="text-[#6b7280]">Sketching out intuitive interfaces and streamlined user flows before diving into design.</p>
-                </div>
-
-                <div className="bg-white border border-[#e5e7eb] p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                    <h3 className="text-xl font-semibold text-[#111827] mb-2">🧪 Implementation</h3>
-                    <p className="text-[#6b7280]">Turning structure into reality — clean, accessible code meets thoughtful interaction.</p>
-                </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center">
+            {/* Step 1 */}
+            <div className="bg-white border border-[#e5e7eb] p-6 rounded-xl shadow-sm hover:shadow-md transition max-w-sm w-full">
+              <h3 className="text-xl font-semibold text-[#111827] mb-2">🔍 Research</h3>
+              <p className="text-[#6b7280]">
+                Understanding user behavior, goals, and obstacles before anything else.
+              </p>
             </div>
+
+            {/* Arrow */}
+            <div className="text-2xl text-gray-400 transform md:rotate-0 rotate-90 select-none">
+              →
+            </div>
+
+            {/* Step 2 */}
+            <div className="bg-white border border-[#e5e7eb] p-6 rounded-xl shadow-sm hover:shadow-md transition max-w-sm w-full">
+              <h3 className="text-xl font-semibold text-[#111827] mb-2">📐 Wireframing</h3>
+              <p className="text-[#6b7280]">
+                Sketching out intuitive interfaces and streamlined user flows before diving into design.
+              </p>
+            </div>
+
+            {/* Arrow */}
+            <div className="text-2xl text-gray-400 transform md:rotate-0 rotate-90 select-none">
+              →
+            </div>
+
+            {/* Step 3 */}
+            <div className="bg-white border border-[#e5e7eb] p-6 rounded-xl shadow-sm hover:shadow-md transition max-w-sm w-full">
+              <h3 className="text-xl font-semibold text-[#111827] mb-2">🧪 Implementation</h3>
+              <p className="text-[#6b7280]">
+                Turning structure into reality — clean, accessible code meets thoughtful interaction.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+
+      <section className="w-full bg-[#faf7ff] py-24 px-6 relative overflow-hidden">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-vietnam font-bold text-[#3b0764] mb-8 tracking-tight uppercase">
+            Brand Identity & Visual Direction
+          </h2>
+
+          <p className="text-lg text-[#4b5563] max-w-3xl mb-16">
+            Your brand is more than just a logo — it’s a voice, a visual language, and a feeling. I help bring that language to life through type, color, and creative systems that align with your mission.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6 font-vietnam">
+            <div className="bg-[#e9d5ff] text-[#581c87] p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+              <h3 className="text-xl font-bold uppercase mb-2">Typography Systems</h3>
+              <p className="text-[#4b5563]">Defining font styles and hierarchy to maintain consistency and clarity across your site.</p>
+            </div>
+
+            <div className="bg-[#fbcfe8] text-[#9d174d] p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+              <h3 className="text-xl font-bold uppercase mb-2">Color Palettes</h3>
+              <p className="text-[#4b5563]">Building out bold and soft color schemes to express emotion and aesthetic range.</p>
+            </div>
+
+            <div className="bg-[#ddd6fe] text-[#4c1d95] p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+              <h3 className="text-xl font-bold uppercase mb-2">Design Systems</h3>
+              <p className="text-[#4b5563]">Creating UI kits and reusable components to ensure a consistent experience at every touchpoint.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </main>
   );
