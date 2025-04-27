@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -9,7 +10,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-whitepurple w-full shadow-md py-1 px-4 sticky top-0 z-50">
+    <header className="bg-whitepurple w-full py-1 px-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center h-[100px]">
         <Link href="/" className="flex items-center space-x-2">
           <Image src="/logos/jCode Logo.png" alt="jCode Studio Logo" width={200} height={200} />
