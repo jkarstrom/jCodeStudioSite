@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+import React from "react";
 import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
