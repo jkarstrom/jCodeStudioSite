@@ -1,10 +1,11 @@
 import React from "react";
-import PropTypes from 'prop-types';
 import { projects } from '../data';
+import PropTypes from 'prop-types'
 import Image from 'next/image';
 
-export default function ProjectDetail({ params }) {
-  const project = projects.find(p => p.slug === params.slug);
+export default async function ProjectDetail({ params }) {
+  const { slug } = params;
+  const project = projects.find(p => p.slug === slug);
 
   if (!project) return <div className="p-10">Project not found.</div>;
 
@@ -15,9 +16,27 @@ export default function ProjectDetail({ params }) {
         <Image src={project.image} alt={project.title} fill className="object-cover" />
       </div>
       <p className="text-gray-700 mb-6">{project.content}</p>
-      <div className="space-x-4">
-        {project.github && <a href={project.github} className="text-pink underline">View Code</a>}
-        {project.live && <a href={project.live} className="text-pink underline">Live Site</a>}
+      <div className="flex gap-4 mt-6">
+        {project.github && (
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink underline"
+          >
+            View Code
+          </a>
+        )}
+        {project.live && (
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink underline"
+          >
+            Live Site
+          </a>
+        )}
       </div>
     </main>
   );
