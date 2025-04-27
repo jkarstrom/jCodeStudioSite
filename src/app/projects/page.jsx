@@ -1,6 +1,7 @@
+import React from "react";
 import Link from 'next/link';
 import Image from 'next/image';
-import { projects } from './data';
+import { projects } from '/data';
 
 export default function Projects() {
   return (
