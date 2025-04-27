@@ -16,8 +16,8 @@ export default function ProjectDetail({ params }) {
       </div>
       <p className="text-gray-700 mb-6">{project.content}</p>
       <div className="space-x-4">
-        {project.github && <a href={project.github} className="text-pink-500 underline">View Code</a>}
-        {project.live && <a href={project.live} className="text-pink-500 underline">Live Site</a>}
+        {project.github && <a href={project.github} className="text-pink underline">View Code</a>}
+        {project.live && <a href={project.live} className="text-pink underline">Live Site</a>}
       </div>
     </main>
   );

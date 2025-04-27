@@ -127,8 +127,7 @@ export default function ServicesPage() {
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center md:items-start relative">
 
             {/* Fun Visual Bubble */}
-            <div className="absolute w-32 h-32 bg-pink-200 rounded-full top-0 left-0 opacity-30 animate-bounce-slow"></div>
-            <div className="absolute w-20 h-20 bg-purple-300 rounded-full bottom-0 right-10 opacity-40 animate-ping"></div>
+            <div className="absolute -top-10 -left-10 w-32 h-32 bg-pink rounded-full opacity-30 animate-bounce-slow"></div>
 
             {/* Text Side */}
             <div className="flex-1">
