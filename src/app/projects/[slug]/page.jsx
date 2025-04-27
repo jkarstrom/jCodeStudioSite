@@ -1,3 +1,5 @@
+import React from "react";
+import PropTypes from 'prop-types';
 import { projects } from '@/data/projects';
 import Image from 'next/image';
 
@@ -20,3 +22,9 @@ export default function ProjectDetail({ params }) {
     </main>
   );
 }
+
+ProjectDetail.propTypes = {
+  params: PropTypes.shape({
+    slug: PropTypes.string.isRequired,
+  }).isRequired,
+};

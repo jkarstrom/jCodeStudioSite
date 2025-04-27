@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Hero from "../components/page/Hero";
-import AdventureCards from "../components/page/AdventureCards";
-import TestimonialCard from "../components/page/TestimonialCard";
+import React from "react";
+import Hero from "../components/page/hero";
+import AdventureCards from "../components/page/adventurecards";
+import TestimonialCard from "../components/page/testimonialcard";
 
 export default function Home() {
   return (

@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { JourneyTimeline } from '../../components/page/JourneyTimeline';
+import React from 'react';
+import { JourneyTimeline } from '../../components/page/journeytimeline';
 
 export default function About() {
     return (
