@@ -6,15 +6,21 @@ import { FaLinkedin } from 'react-icons/fa';
 
 export default function Contact() {
   return (
-    <section className="flex-1 flex flex-col justify-center items-center bg-whitepurple text-center px-6 py-24">
+    <section className="h-full flex flex-1 flex-col justify-center items-center px-6 py-20 bg-whitepurple text-center w-full">
       <h1 className="text-4xl md:text-5xl font-bold mb-6 font-vietnam text-darkpurple">
         Get in Touch
       </h1>
-      
-      <p className="text-lg text-gray-700 max-w-xl mb-8 font-vietnam">
-        I&apos;d love to hear from you!  
-        Please include your name, project details, timeline, and any ideas you want to bring to life.
-      </p>
+
+      <div className="max-w-2xl text-gray-700 font-vietnam mb-10 md:mb-14 px-4 md:px-0">
+        <p className="text-lg leading-relaxed">
+            Whether you&apos;re starting a new project, refreshing your online presence, or simply exploring ideas —
+            I&apos;d love to collaborate with you.
+        </p>
+        <p className="mt-4 text-lg leading-relaxed">
+            Please include a few details like your project goals, timeline, and any inspiration you have in mind.
+            Let&apos;s create something incredible together.
+        </p>
+    </div>
 
       <div className="flex flex-col md:flex-row gap-6">
         {/* Email Button */}

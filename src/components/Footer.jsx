@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-whitepurple mt-10 py-6">
+    <footer className="bg-whitepurple py-6">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <div className="flex justify-center space-x-6 mb-4">
           <Link href="https://linkedin.com/in/joankarstrom" target="_blank">

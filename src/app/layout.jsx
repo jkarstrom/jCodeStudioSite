@@ -23,15 +23,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="overflow-x-hidden w-screen h-full">
-      <body className={`${beVietnamPro.variable} font-vietnam h-full`}>
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <main className="flex-grow w-full flex flex-col">
-            {children}
-          </main>
-          <Footer />
-        </div>
+    <html lang="en" className="w-screen overflow-x-hidden">
+      <body className={`${beVietnamPro.variable} font-vietnam flex flex-col min-h-screen`}>
+        <Header />
+        <main className="flex-grow w-full relative">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
