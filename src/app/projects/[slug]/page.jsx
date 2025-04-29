@@ -15,7 +15,9 @@ export default async function ProjectDetail({ params }) {
       <div className="relative w-full h-64 mb-6 rounded overflow-hidden">
         <Image src={project.image} alt={project.title} fill className="object-cover" />
       </div>
-      <p className="text-gray-700 mb-6">{project.content}</p>
+      <div className="text-gray-700 leading-relaxed text-lg whitespace-pre-line font-vietnam">
+        {project.content}
+      </div>
       <div className="flex gap-4 mt-6">
         {project.github && (
           <a
