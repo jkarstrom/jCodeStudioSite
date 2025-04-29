@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <body className={`${beVietnamPro.variable} font-vietnam h-full`}>
         <div className="flex flex-col min-h-screen">
           <Header />
-          <main className="flex-grow w-full">
+          <main className="flex-grow w-full flex flex-col">
             {children}
           </main>
           <Footer />
