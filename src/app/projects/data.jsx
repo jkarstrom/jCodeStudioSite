@@ -3,7 +3,7 @@ export const projects = [
       slug: 'ggrc-site',
       title: 'The Glenda Gordy Research Center (GGRC) Site',
       description: 'A public crime reporting tool built with React, Tailwind, and Next.js.',
-      image: '/images/ggrc-thumbnail.png',
+      image: '/images/GGRC Site.png',
       stack: ['Next.js', 'Tailwind', 'Framer Motion'],
       live: 'https://portal.theglendagordyresearchcenter.com/',
       content: `
