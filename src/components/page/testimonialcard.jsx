@@ -1,6 +1,8 @@
 'use client';
 
+import React from 'react';
 import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
 
 export default function TestimonialCard({ quote, name, title, color = 'bg-lightpurple' }) {
   return (
@@ -18,3 +20,10 @@ export default function TestimonialCard({ quote, name, title, color = 'bg-lightp
     </motion.div>
   );
 }
+
+TestimonialCard.propTypes = {
+  quote: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  color: PropTypes.string,
+};
