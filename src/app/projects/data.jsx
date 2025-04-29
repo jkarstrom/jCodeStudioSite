@@ -5,7 +5,7 @@ export const projects = [
       description: 'A public crime reporting tool built with React, Tailwind, and Next.js.',
       image: '/images/ggrc-thumbnail.png',
       stack: ['Next.js', 'Tailwind', 'Framer Motion'],
-      live: 'https://ggrc-site.vercel.app',
+      live: 'https://portal.theglendagordyresearchcenter.com/',
       content: `
       The Glenda Gordy Research Center (GGRC) site was built with a user-first mindset, focused on delivering crucial crime data in a way that is both accessible and actionable.
 
