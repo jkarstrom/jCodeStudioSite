@@ -12,7 +12,7 @@ export default function Hero() {
     <div className="absolute w-32 h-32 bg-green opacity-30 rounded-full bottom-[-30px] right-[-40px] animate-[float_8s_ease-in-out_infinite]"></div>
       <h1 className="text-3xl md:text-6xl leading-tight font-vietnam text-darkpurple">
         <ClientOnly>
-          <div className="bg-white/60 backdrop-blur-sm rounded-lg px-4 py-2 inline-block">
+          <div className="bg-white/70 rounded-lg px-4 py-2 inline-block text-darkpurple text-shadow-sm">
             <Typewriter
               words={[
                 "Hey, I’m Joan and welcome to jCode Studio.",

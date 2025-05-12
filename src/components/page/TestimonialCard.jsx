@@ -8,13 +8,16 @@ export default function TestimonialCard({ quote, name, title, color = 'bg-lightp
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
-      className={`rounded-2xl p-6 shadow-lg transition ${color} text-foreground max-w-md mx-auto`}
+      className={`h-full flex flex-col justify-between rounded-2xl p-6 shadow-lg transition ${color} text-foreground w-full`}
     >
-      <p className="text-lg font-vietnam font-light italic mb-4 leading-relaxed">
-        “{quote}”
-      </p>
-      <div className="mt-4 border-t border-foreground/10 pt-3">
-        <p className="font-vietnam text-md">{name}</p>
+      <div className="flex-1 flex items-center justify-center">
+        <p className="text-lg font-vietnam font-light italic leading-relaxed text-center">
+          “{quote}”
+        </p>
+      </div>
+
+      <div className="mt-6 border-t border-foreground/10 pt-3 text-center">
+        <p className="font-vietnam text-md font-semibold">{name}</p>
         <p className="text-sm text-foreground/80">{title}</p>
       </div>
     </motion.div>

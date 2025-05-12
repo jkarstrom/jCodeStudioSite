@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: false,
   theme: {
     extend: {
       fontFamily: {
@@ -8,6 +9,7 @@ export default {
         vietnam: ['Be Vietnam Pro', 'sans-serif'],
       },
       colors: {
+        black: '#4c4654',
         white: '#ffffff',
         grey: '#f1f2f2',
         lightpurple: '#e9e2ee',

@@ -40,3 +40,15 @@ html, body {
   padding: 0;
   background-color: white;
 }
+
+.text-shadow-sm {
+  text-shadow: 0 0 4px rgba(169, 154, 189, 0.5);
+}
+
+.text-shadow-md {
+  text-shadow: 0 0 6px rgba(169, 154, 189, 0.7);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 0 10px rgba(169, 154, 189, 0.9);
+}
