@@ -55,6 +55,12 @@ export default function AdventureCards() {
           </motion.a>
         ))}
       </div>
+      <div className="mt-16 max-w-3xl mx-auto text-center">
+        <h3 className="text-2xl font-semibold text-darkpurple mb-4">Why jCode Studio?</h3>
+        <p className="text-gray-700 text-lg leading-relaxed font-vietnam">
+          I believe great digital experiences come from collaboration, curiosity, and care. Every project is a partnership — I listen closely, design thoughtfully, and build with intention so your ideas translate into results. Let’s create something that truly reflects your vision.
+        </p>
+      </div>
     </section>
   );
 }

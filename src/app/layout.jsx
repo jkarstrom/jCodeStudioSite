@@ -14,10 +14,26 @@ const beVietnamPro = Be_Vietnam_Pro({
 });
 
 export const metadata = {
-  title: "jCode Studio",
-  description: "jCode studio, a frontend developer looking to create your next project - created by Joan Karstrom",
+  title: "jCode Studio | Frontend Developer & UX Designer - Joan Karstrom",
+  description: "Portfolio and studio of Joan Karstrom — Chicago-based frontend developer and UX designer crafting responsive websites and intuitive user experiences.",
+  keywords: ["frontend developer", "UX designer", "React developer", "Next.js portfolio", "web development", "Joan Karstrom", "jCode Studio"],
   icons: {
     icon: './logos/Favicon.svg',
+  },
+  openGraph: {
+    title: "jCode Studio | Frontend Developer & UX Designer - Joan Karstrom",
+    description: "Building clean, accessible web experiences with React and Next.js. Explore projects, services, and my creative process.",
+    url: "https://www.jcodestudio.com",
+    siteName: "jCode Studio",
+    images: [
+      {
+        url: "/logos/jCode Logo- Blue.png",
+        width: 1200,
+        height: 630,
+        alt: "jCode Studio preview",
+      },
+    ],
+    type: "website",
   },
 };
 
