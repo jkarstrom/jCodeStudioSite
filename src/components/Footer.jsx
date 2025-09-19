@@ -7,10 +7,10 @@ const Footer = () => {
     <footer className="bg-whitepurple py-6">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <div className="flex justify-center space-x-6 mb-4">
-          <Link href="https://linkedin.com/in/joankarstrom" target="_blank">
+          <Link href="https://linkedin.com/in/joan-karstrom/" target="_blank">
             <FaLinkedin className="text-darkpurple hover:text-lightpurple text-2xl" />
           </Link>
-          <Link href="https://github.com/yourgithub" target="_blank">
+          <Link href="https://github.com/jkarstrom" target="_blank">
             <FaGithub className="text-darkpurple hover:text-lightpurple  text-2xl" />
           </Link>
           <Link href="mailto:jcodestudio@email.com">

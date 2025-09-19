@@ -20,7 +20,7 @@ export const projects = [
       slug: 'jcodestudiosite',
       title: 'jCode Studio Site',
       description: 'The site you are on right now - explore a bit and see what I can do!',
-      image: '/logos/jCode Logo - Blue.png',
+      image: '/logos/jCode Logo- Blue.png',
       stack: ['React', 'Tailwind', 'Next.js', 'Vercel'],
       github: 'https://github.com/jkarstrom/jCodeStudioSite',
       live: 'https://www.jcodestudio.com',
