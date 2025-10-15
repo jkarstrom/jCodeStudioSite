@@ -38,7 +38,7 @@ export const projects = [
       slug: 'driveperformance-site',
       title: 'Drive Performance Site',
       description: 'A modern training facility website for Drive Performance, built with Next.js, React, and Tailwind CSS.',
-      image: '/images/Drive Performance Site.png',
+      image: '/images/Drive Performance PNG.png',
       stack: ['Next.js', 'React', 'Tailwind', 'Vercel'],
       live: 'https://www.driveperformance.us',
       baseball: 'https://www.driveperformance.us/baseball',
