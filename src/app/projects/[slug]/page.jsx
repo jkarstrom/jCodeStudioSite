@@ -39,6 +39,26 @@ export default async function ProjectDetail({ params }) {
             Live Site
           </a>
         )}
+        {project.baseball && (
+          <a
+            href={project.baseball}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink underline"
+          >
+            Baseball Page
+          </a>
+        )}
+        {project.training && (
+          <a
+            href={project.training}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink underline"
+          >
+            Training Page
+          </a>
+        )}
       </div>
     </main>
   );

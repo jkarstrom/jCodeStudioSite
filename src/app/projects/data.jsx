@@ -33,5 +33,24 @@ export const projects = [
       
       This site showcases the many sides of my work — blending technical skill with creativity, and giving you a window into the journey, the process, and the passion behind everything I do.
       `
+    },
+    {
+      slug: 'driveperformance-site',
+      title: 'Drive Performance Site',
+      description: 'A modern training facility website for Drive Performance, built with Next.js, React, and Tailwind CSS.',
+      image: '/images/Drive Performance Site.png',
+      stack: ['Next.js', 'React', 'Tailwind', 'Vercel'],
+      live: 'https://www.driveperformance.us',
+      baseball: 'https://www.driveperformance.us/baseball',
+      training: 'https://www.driveperformance.us/training',
+      content: `
+      The Drive Performance site was designed and developed to showcase an elite training facility in Lake Bluff, IL. 
+      Built with a clean, performance-driven interface, it highlights the facility's baseball and strength training programs, coaching staff, and facility details.
+      
+      I focused on creating a fast, mobile-optimized experience with a bold design that mirrors the Drive brand. 
+      The project included dynamic service pages, a photo gallery, and integrated booking links, all managed seamlessly through Vercel hosting.
+      
+      Drive Performance demonstrates how thoughtful web design can enhance a brand’s online presence and make it easy for athletes and parents to explore training options and connect directly with coaches.
+      `
     }
   ];
