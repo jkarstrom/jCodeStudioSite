@@ -14,7 +14,7 @@ export default function Projects() {
             key={project.slug}
             className="bg-white rounded-lg shadow-md hover:shadow-xl transition p-4"
           >
-            <div className="relative w-full h-48 mb-4 rounded overflow-hidden">
+            <div className="relative w-full h-48 mb-4 rounded bg-gray-100">
               <Image
                 src={project.image}
                 alt={project.title}
