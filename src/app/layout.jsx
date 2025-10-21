@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import Script from "next/script";
 import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
@@ -46,6 +47,18 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-GN7EY0CTJY"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GN7EY0CTJY');
+          `}
+        </Script>
       </body>
     </html>
   );
