@@ -52,5 +52,23 @@ export const projects = [
       
       Drive Performance demonstrates how thoughtful web design can enhance a brand’s online presence and make it easy for athletes and parents to explore training options and connect directly with coaches.
       `
+    },
+    {
+      slug: 'lifefitmatrix',
+      title: 'LifeFit Matrix Assessment Quiz',
+      description: 'An Olver International product: A Choice Theory® based self-assessment and profile-matching quiz that maps users to 200+ profiles and automates data collection & email campaigns.',
+      image: '/images/LifeFit.png',
+      stack: ['React', 'Next.js', 'Tailwind', 'Google Sheets API'],
+      live: 'https://www.lifefitmatrix.com/',
+      content: `
+      I built a comprehensive quiz component that scores responses and matches each user to one of over 200 profile types. Results are captured automatically, stored for analysis, and used to trigger personalized email campaigns.
+
+      Highlights:
+      - Scoring engine to calculate LifeFit scores and map to profiles
+      - Profile matching across 200+ profiles
+      - Automated data capture and storage for analytics
+      - Triggered email campaign workflows based on quiz results
+      - Mobile-first, accessible UI with performance optimizations
+      `
     }
   ];
