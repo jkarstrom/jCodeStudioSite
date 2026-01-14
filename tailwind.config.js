@@ -16,8 +16,21 @@ export default {
         darkpurple: '#a99abd',
         whitepurple: '#faf7ff',
         lilac: '#d6d6e9',
+        // Greens
         green: '#cbe6c0',
+        mint: '#c8f0e8',
+        sage: '#d4e8d1',
+        // Pinks
         pink: '#eedbe6',
+        rose: '#f5d5e0',
+        blush: '#fce4ec',
+        // Blues
+        sky: '#d6eaf8',
+        powder: '#e3f2fd',
+        periwinkle: '#c5cae9',
+        // Accents
+        peach: '#ffe5d9',
+        lavender: '#e8e0f0',
       },
       animation: {
         'bounce-slow': 'bounce 3s infinite',

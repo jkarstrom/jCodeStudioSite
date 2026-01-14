@@ -9,18 +9,24 @@ const adventures = [
     title: 'Frontend Development',
     description: 'Clean, responsive, and accessible websites built with React & Next.js — tailored for performance and modern user expectations.',
     href: '/projects',
+    accentColor: 'border-l-sky',
+    bgHover: 'hover:bg-powder/30',
   },
   {
     emoji: '🎨',
     title: 'UX/UI Design & Strategy',
     description: 'From wireframes to polished interfaces, I design with usability, accessibility, and aesthetics in mind to guide users naturally.',
     href: '/services',
+    accentColor: 'border-l-rose',
+    bgHover: 'hover:bg-blush/30',
   },
   {
     emoji: '✨',
     title: 'Brand Identity & Visual Direction',
-    description: 'Let’s define your look and feel — from logo and color palette to type system and creative strategy — to tell your story effectively.',
+    description: "Let's define your look and feel — from logo and color palette to type system and creative strategy — to tell your story effectively.",
     href: '/services',
+    accentColor: 'border-l-mint',
+    bgHover: 'hover:bg-sage/30',
   },
 ];
 
@@ -47,7 +53,7 @@ export default function AdventureCards() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
-            className="bg-white rounded-2xl shadow-md p-6 text-left space-y-4 border border-lightpurple hover:shadow-lg transition"
+            className={`bg-white rounded-2xl shadow-md p-6 text-left space-y-4 border border-lightpurple border-l-4 ${item.accentColor} ${item.bgHover} hover:shadow-lg transition`}
           >
             <div className="text-4xl">{item.emoji}</div>
             <h3 className="text-xl font-semibold text-darkpurple">{item.title}</h3>

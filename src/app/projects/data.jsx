@@ -70,5 +70,20 @@ export const projects = [
       - Triggered email campaign workflows based on quiz results
       - Mobile-first, accessible UI with performance optimizations
       `
+    },
+    {
+      slug: 'mentalfreedom',
+      title: 'Mental Freedom® Site',
+      description: 'An Olver International product: A skills-based personal development program website built with Next.js and Tailwind CSS.',
+      image: '/images/MentalFreedom.png',
+      stack: ['Next.js', 'React', 'Tailwind', 'Vercel'],
+      live: 'https://www.mentalfreedom.net/',
+      content: `
+      Mental Freedom® is a psychoeducational platform designed to help people manage emotions and respond to life's challenges with greater clarity and composure. Built on Choice Theory principles, the site promotes individual guidance, group sessions, self-paced learning, and professional certification programs.
+
+      I developed a clean, calming user experience that reflects the program's philosophy of personal autonomy and growth. The site features responsive design, smooth navigation, and clear calls-to-action for the various learning formats offered.
+
+      Key features include program overviews, event registration for annual conferences, and accessible content that speaks to users experiencing emotional stress, relationship challenges, or life transitions.
+      `
     }
   ];
