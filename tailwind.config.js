@@ -13,7 +13,7 @@ export default {
         white: '#ffffff',
         grey: '#f1f2f2',
         lightpurple: '#e9e2ee',
-        darkpurple: '#a99abd',
+        darkpurple: '#5e4875',
         whitepurple: '#faf7ff',
         lilac: '#d6d6e9',
         // Greens
@@ -35,8 +35,18 @@ export default {
       animation: {
         'bounce-slow': 'bounce 3s infinite',
         'float': 'float 6s ease-in-out infinite',
+        'marquee': 'marquee 28s linear infinite',
+        'marquee-reverse': 'marquee-reverse 28s linear infinite',
       },
       keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'marquee-reverse': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
         bounce: {
           '0%, 100%': {
             transform: 'translateY(-5%)',

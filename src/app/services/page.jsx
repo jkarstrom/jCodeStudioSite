@@ -4,9 +4,9 @@ import React from 'react';
 
 export default function ServicesPage() {
   return (
-    <main className="w-full text-foreground">
+    <main className="w-full text-black">
       <section className="py-24 text-center px-6 scroll-smooth bg-whitepurple">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 font-vietnam text-transparent bg-clip-text bg-gradient-to-r from-pink via-darkpurple to-lilac">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 font-vietnam text-darkpurple">
           What I Can Help You Build
         </h1>
         <p className="text-lg text-darkpurple max-w-3xl mx-auto mb-12 font-vietnam">
@@ -15,19 +15,19 @@ export default function ServicesPage() {
 
         {/* Scroll Links */}
         <div className="flex flex-wrap justify-center gap-6 text-lg font-medium">
-          <a href="#frontend" className="text-darkpurple hover:text-green transition underline-offset-4 hover:underline">
+          <a href="#frontend" className="text-darkpurple hover:text-black transition underline-offset-4 hover:underline">
             Frontend Dev
           </a>
-          <a href="#design" className="text-darkpurple hover:text-pink transition underline-offset-4 hover:underline">
+          <a href="#design" className="text-darkpurple hover:text-black transition underline-offset-4 hover:underline">
             Website Design
           </a>
-          <a href="#ux" className="text-darkpurple hover:text-lilac transition underline-offset-4 hover:underline">
+          <a href="#ux" className="text-darkpurple hover:text-black transition underline-offset-4 hover:underline">
             UI/UX Strategy
           </a>
-          <a href="#brand" className="text-darkpurple hover:text-green transition underline-offset-4 hover:underline">
+          <a href="#brand" className="text-darkpurple hover:text-black transition underline-offset-4 hover:underline">
             Brand Identity
           </a>
-          <a href="#workshop" className="text-darkpurple hover:text-pink transition underline-offset-4 hover:underline">
+          <a href="#workshop" className="text-darkpurple hover:text-black transition underline-offset-4 hover:underline">
             Workshops
           </a>
         </div>
@@ -133,13 +133,13 @@ export default function ServicesPage() {
             <div className="flex-1">
               <h2 className="text-5xl mb-6 font-fredoka text-[#581c87] uppercase tracking-tight leading-tight">
                 Brand Identity
-                <span className="block text-[#dd64bc] font-caveat text-4xl normal-case mt-2"> & Visual Direction</span>
+                <span className="block text-darkpurple font-fredoka text-4xl normal-case mt-2"> & Visual Direction</span>
               </h2>
               <p className="font-fredoka text-lg text-[#4b5563] mb-8">
                 More than a logo — it&#39;s your energy, your voice, your vibe.
                 I craft brand systems that look amazing *and* work hard, creating emotional connections with your audience.
               </p>
-              <ul className="list-none space-y-4">
+              <ul className="list-none space-y-4 text-black font-fredoka text-lg">
                 <li className="flex items-center gap-3">
                   <span className="text-2xl">🎨</span> Typography Systems
                 </li>

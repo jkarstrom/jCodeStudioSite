@@ -39,8 +39,8 @@ const timeline = [
 export default function JourneyTimeline() {
   return (
     <section className="mt-16">
-      <h2 className="text-4xl font-GothamBlack text-purple mb-12 text-center md:text-left tracking-tight">The jCode Journey</h2>
-      <div className="border-l-[3px] border-purple bg-gradient-to-br from-white via-[#fdf8ff] to-[#f5e6ff] rounded-lg pl-8 space-y-12 relative py-6 px-2 md:px-6">
+      <h2 className="text-4xl font-vietnam font-bold text-darkpurple mb-12 text-center md:text-left tracking-tight">The jCode Journey</h2>
+      <div className="border-l-[3px] border-darkpurple bg-gradient-to-br from-white via-[#fdf8ff] to-[#f5e6ff] rounded-lg pl-8 space-y-12 relative py-6 px-2 md:px-6">
          {timeline.map((item, i) => (
           <motion.div
             key={i}
@@ -49,15 +49,15 @@ export default function JourneyTimeline() {
             transition={{ duration: 0.6, ease: 'easeOut', delay: i * 0.15 }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.03, backgroundColor: '#fff8fc' }}
-            className="relative rounded-xl px-6 py-5 shadow-md hover:shadow-xl border border-purple/10 bg-white transition-all duration-300"
+            className="relative rounded-xl px-6 py-5 shadow-md hover:shadow-xl border border-darkpurple/10 bg-white transition-all duration-300"
           >
             {/* Timeline dot */}
-             <div className="absolute -left-2 top-2 w-4 h-4 bg-gradient-to-br from-pink-500 to-purple rounded-full border-[3px] border-white shadow-lg"></div>
+             <div className="absolute -left-2 top-2 w-4 h-4 bg-gradient-to-br from-rose to-darkpurple rounded-full border-[3px] border-white shadow-lg"></div>
 
-             <h3 className="text-xl font-GothamBold text-purple">
+             <h3 className="text-xl font-vietnam font-semibold text-darkpurple">
                <span className="text-black">{item.year}</span> — {item.title}
              </h3>
-             <p className="text-gray-700 mt-1 leading-relaxed">{item.description}</p>
+             <p className="text-black/70 mt-1 leading-relaxed">{item.description}</p>
            </motion.div>
         ))}
       </div>

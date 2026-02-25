@@ -27,8 +27,8 @@ const skills = [
     icon: FaUniversalAccess,
     title: 'Accessibility',
     description: 'Inclusive, thoughtful interfaces that work for everyone across all devices.',
-    color: 'bg-mint',
-    iconColor: '#14b8a6',
+    color: 'bg-lavender',
+    iconColor: '#7c3aed',
   },
 ];
 
@@ -54,10 +54,10 @@ export default function About() {
   return (
     <main className="relative overflow-hidden">
       {/* Hero Section with Gradient Background */}
-      <section className="relative px-6 py-24 md:py-32 bg-gradient-to-br from-whitepurple via-powder to-mint">
+      <section className="relative px-6 py-24 md:py-32 bg-gradient-to-br from-whitepurple via-powder to-lavender">
         {/* Floating decorative shapes */}
         <div className="absolute w-40 h-40 bg-pink opacity-30 rounded-full top-[-30px] left-[-30px] animate-[float_6s_ease-in-out_infinite]" />
-        <div className="absolute w-28 h-28 bg-mint opacity-40 rounded-full bottom-[10%] right-[-20px] animate-[float_8s_ease-in-out_infinite]" />
+        <div className="absolute w-28 h-28 bg-periwinkle opacity-40 rounded-full bottom-[10%] right-[-20px] animate-[float_8s_ease-in-out_infinite]" />
         <div className="absolute w-20 h-20 bg-lavender opacity-35 rounded-full top-[20%] right-[15%] animate-[float_7s_ease-in-out_infinite]" />
         <div className="absolute w-16 h-16 bg-peach opacity-30 rounded-full bottom-[30%] left-[8%] animate-[float_9s_ease-in-out_infinite]" />
 

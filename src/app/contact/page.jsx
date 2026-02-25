@@ -36,7 +36,7 @@ export default function Contact() {
           href="https://www.linkedin.com/in/joan-karstrom/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 bg-darkpurple text-white py-3 px-6 rounded-lg shadow hover:bg-lilac transition"
+          className="flex items-center gap-2 bg-darkpurple text-white py-3 px-6 rounded-lg shadow hover:bg-lightpurple hover:text-darkpurple transition"
         >
           <FaLinkedin className="text-2xl" />
           Connect on LinkedIn
