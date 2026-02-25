@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   FaReact,
   FaPython,
@@ -48,6 +49,11 @@ function MarqueeRow({ items, reverse = false }) {
     </div>
   );
 }
+
+MarqueeRow.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  reverse: PropTypes.bool,
+};
 
 export default function TechStack() {
   return (
