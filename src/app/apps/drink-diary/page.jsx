@@ -65,13 +65,13 @@ export default function DrinkDiaryPage() {
           <div>
             <p className="text-xs font-bold tracking-widest uppercase text-[#687D31] mb-3">The core experience</p>
             <h2 className="font-fredoka font-bold text-3xl md:text-4xl text-[#19350C] mb-5 leading-tight">
-              Every drink, beautifully logged
+              Snap a photo, log a drink, and get back to sipping
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              See something worth remembering? Open the app, snap a photo, and the background disappears instantly — on your device, no server needed. Pick a color-coded category, add a location, note the price, and log it in seconds.
+              Have a drink that is so aestheticly pleasing? Open the app, snap a photo, and the background disappears instantly — on your device, no server needed. Pick a drink type, add a location, the price, and add it in seconds.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Hot or iced, wine or matcha, dive bar or rooftop — every detail is yours to keep.
+              Hot or iced, wine or matcha, farmers market or rooftop bar — every detail is yours to keep.
             </p>
           </div>
 
