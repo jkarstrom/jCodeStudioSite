@@ -133,7 +133,7 @@ export default function DrinkDiaryPage() {
               See what your friends are sipping
             </h2>
             <p className="text-white/70 leading-relaxed mb-4">
-              Sign up with your phone number and create your own username. Search for friends by their handle, follow them, and their latest drinks show up in your real-time feed.
+              Sign up with your phone number and create your own username. Search for friends by @ , follow them, and their latest drinks show up in your real-time feed.
             </p>
             <p className="text-white/70 leading-relaxed">
               Your phone number is never visible to anyone — only your display name and username. A social experience built on vibes, not oversharing.
@@ -148,10 +148,10 @@ export default function DrinkDiaryPage() {
           <div>
             <p className="text-xs font-bold tracking-widest uppercase text-[#687D31] mb-3">Stats</p>
             <h2 className="font-fredoka font-bold text-3xl md:text-4xl text-[#19350C] mb-5 leading-tight">
-              Your taste, in numbers
+              Your taste, but in number form
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Switch between weekly, monthly, or all-time views. Filter by category to see how your habits shift. A bar chart breaks down your logs by day so patterns are easy to spot at a glance.
+              Switch between weekly, monthly, or all-time views. Filter by category to see how your habits shift. Charts down your logs by day so patterns are easy to spot at a glance.
             </p>
             <p className="text-gray-600 leading-relaxed">
               Track your total spend, see which spots you return to most, and browse a staggered photo gallery of everything you&apos;ve logged — tap any photo for a full-screen view.
@@ -225,7 +225,7 @@ export default function DrinkDiaryPage() {
       <section className="py-20 px-6 bg-[#F5F4F0]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-fredoka font-bold text-3xl md:text-4xl text-[#19350C] mb-3">
-            Seven palettes. One is yours.
+            Seven palettes. Customize your vibe.
           </h2>
           <p className="text-gray-500 text-lg max-w-md mx-auto mb-12">
             Garden is free. Unlock six premium themes to make Drink Diary feel completely you.
