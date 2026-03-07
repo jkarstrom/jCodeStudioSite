@@ -30,6 +30,7 @@ export default function Header() {
             <li><Link href="/about" className="text-darkpurple hover:text-lightpurple">About</Link></li>
             <li><Link href="/projects" className="text-darkpurple hover:text-lightpurple">Projects</Link></li>
             <li><Link href="/services" className="text-darkpurple hover:text-lightpurple">Services</Link></li>
+            <li><Link href="/apps" className="text-darkpurple hover:text-lightpurple">Apps</Link></li>
             <li><Link href="/contact" className="text-darkpurple hover:text-lightpurple">Contact</Link></li>
           </ul>
         </nav>
@@ -41,6 +42,7 @@ export default function Header() {
             <li><Link href="/about" className="font-vietnam text-darkpurple hover:text-lightpurple">About</Link></li>
             <li><Link href="/projects" className="text-darkpurple hover:text-lightpurple">Projects</Link></li>
             <li><Link href="/services" className="text-darkpurple hover:text-lightpurple">Services</Link></li>
+            <li><Link href="/apps" className="text-darkpurple hover:text-lightpurple">Apps</Link></li>
             <li><Link href="/contact" className="text-darkpurple hover:text-lightpurple">Contact</Link></li>
           </ul>
         </nav>
