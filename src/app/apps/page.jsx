@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Apps | jCode Studio",
@@ -13,8 +14,6 @@ const apps = [
     tagline: "A visual, social drink log for iPhone.",
     description:
       "Snap it. Log it. Share it. Drink Diary lets you capture the drinks you love with photos, track your habits over time, and share with friends.",
-    iconBg: "bg-[#19350C]",
-    accentBg: "bg-[#687D31]",
     platform: "iOS",
     status: "Coming Soon",
     tags: ["React Native", "Firebase", "iOS"],
@@ -51,8 +50,8 @@ export default function AppsPage() {
               className="group flex flex-col sm:flex-row items-start gap-6 bg-white rounded-3xl p-8 border-2 border-transparent hover:border-[#19350C]/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
               {/* Icon */}
-              <div className={`shrink-0 w-20 h-20 rounded-[20px] ${app.iconBg} flex items-end justify-end p-2 shadow-lg`}>
-                <div className={`w-6 h-6 rounded-lg ${app.accentBg}`} />
+              <div className="shrink-0 w-20 h-20 rounded-[20px] shadow-lg overflow-hidden relative">
+                <Image src="/images/icon.png" alt={`${app.name} app icon`} fill className="object-cover" />
               </div>
 
               {/* Info */}

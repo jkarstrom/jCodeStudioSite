@@ -193,7 +193,7 @@ export default function DrinkDiaryPage() {
         </div>
       </section>
 
-      {/* Screenshots placeholder */}
+      {/* Screenshots */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="font-fredoka font-bold text-3xl md:text-4xl text-[#19350C] mb-4">
@@ -205,20 +205,17 @@ export default function DrinkDiaryPage() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-end">
             {[
-              { label: "Home Feed", height: "h-[480px]", scale: "scale-95" },
-              { label: "Log a Drink", height: "h-[520px]", scale: "scale-100" },
-              { label: "Stats", height: "h-[480px]", scale: "scale-95" },
-            ].map(({ label, height, scale }) => (
-              <div key={label} className={`relative flex-1 max-w-[180px] mx-auto ${scale}`}>
-                <div className={`${height} rounded-[36px] border-4 border-[#19350C]/30 bg-gradient-to-b from-[#19350C] to-[#687D31] shadow-2xl flex flex-col items-center justify-end pb-8`}>
-                  <span className="text-white/40 text-xs font-medium tracking-widest uppercase">{label}</span>
+              { src: "/images/screenshots/Screenshot1.png", alt: "Home Feed", scale: "scale-95" },
+              { src: "/images/screenshots/Screenshot2.png", alt: "Log a Drink", scale: "scale-100" },
+              { src: "/images/screenshots/Screenshot3.png", alt: "Stats", scale: "scale-95" },
+            ].map(({ src, alt, scale }) => (
+              <div key={alt} className={`relative flex-1 max-w-[180px] mx-auto ${scale}`}>
+                <div className="rounded-[36px] overflow-hidden shadow-2xl border-4 border-[#19350C]/20">
+                  <Image src={src} alt={alt} width={360} height={780} className="w-full h-auto" />
                 </div>
-                <div className="absolute top-3 left-1/2 -translate-x-1/2 w-16 h-1.5 bg-[#19350C]/30 rounded-full" />
               </div>
             ))}
           </div>
-
-          <p className="mt-8 text-[#2d4a1a]/50 text-sm">Screenshots coming soon</p>
         </div>
       </section>
 
