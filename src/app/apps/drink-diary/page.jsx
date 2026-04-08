@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Drink Diary | jCode Studio",
@@ -26,9 +27,9 @@ export default function DrinkDiaryPage() {
         <div className="absolute -top-16 -right-16 w-64 h-64 bg-pink rounded-full opacity-30 blur-3xl pointer-events-none" />
         <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-lightpurple rounded-full opacity-25 blur-2xl pointer-events-none" />
 
-        {/* App icon placeholder */}
-        <div className="relative mx-auto mb-8 w-28 h-28 rounded-[28px] bg-[#19350C] shadow-2xl flex items-center justify-center">
-          <div className="w-12 h-12 rounded-full border-4 border-[#687D31] border-t-transparent" style={{ transform: 'rotate(-20deg)' }} />
+        {/* App icon */}
+        <div className="relative mx-auto mb-8 w-28 h-28 rounded-[28px] shadow-2xl overflow-hidden">
+          <Image src="/images/icon.png" alt="Drink Diary app icon" fill className="object-cover" />
         </div>
 
         <div className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm text-[#19350C] text-sm font-semibold px-4 py-1.5 rounded-full mb-5 border border-white/40">
