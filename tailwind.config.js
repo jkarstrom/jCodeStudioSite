@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false,
+  darkMode: 'media',
   theme: {
     extend: {
       fontFamily: {
@@ -31,6 +31,32 @@ export default {
         // Accents
         peach: '#ffe5d9',
         lavender: '#e8e0f0',
+      },
+      fontSize: {
+        // ── Brand Type Scale ──────────────────────────────────────
+        // Display: Fredoka Bold — hero headlines, big moments
+        'display':    ['clamp(3.5rem, 8vw, 6rem)',   { lineHeight: '1.05', letterSpacing: '-0.02em' }],
+        // Headings: Fredoka Bold — section titles
+        'h1':         ['clamp(2.5rem, 5vw, 3.75rem)', { lineHeight: '1.1',  letterSpacing: '-0.015em' }],
+        'h2':         ['clamp(2rem, 4vw, 2.75rem)',   { lineHeight: '1.15', letterSpacing: '-0.01em' }],
+        'h3':         ['clamp(1.5rem, 3vw, 2rem)',    { lineHeight: '1.25' }],
+        'h4':         ['1.25rem',                     { lineHeight: '1.35' }],
+        // Body: Be Vietnam Pro — readable, clean
+        'body-lg':    ['1.125rem', { lineHeight: '1.75' }],
+        'body-base':  ['1rem',     { lineHeight: '1.7'  }],
+        'body-sm':    ['0.875rem', { lineHeight: '1.6'  }],
+        // UI: Be Vietnam Pro — labels, tags, captions
+        'caption':    ['0.8125rem', { lineHeight: '1.5' }],
+        'label':      ['0.75rem',   { lineHeight: '1.4', letterSpacing: '0.08em' }],
+        'micro':      ['0.6875rem', { lineHeight: '1.4', letterSpacing: '0.1em'  }],
+      },
+      colors: {
+        // ── Extended Brand Colors ─────────────────────────────────
+        'brand':         '#5e4875',   // primary — darkpurple alias
+        'brand-vivid':   '#7B4FA0',   // more saturated CTA purple
+        'brand-light':   '#faf7ff',   // whitepurple alias
+        'cream':         '#F5F3EE',   // warm off-white backgrounds
+        'ink':           '#2d2438',   // near-black for body text
       },
       animation: {
         'bounce-slow': 'bounce 3s infinite',

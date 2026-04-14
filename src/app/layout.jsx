@@ -15,15 +15,15 @@ const beVietnamPro = Be_Vietnam_Pro({
 });
 
 export const metadata = {
-  title: "jCode Studio | Frontend Developer & UX Designer - Joan Karstrom",
-  description: "Portfolio and studio of Joan Karstrom — Chicago-based frontend developer and UX designer crafting responsive websites and intuitive user experiences.",
-  keywords: ["frontend developer", "UX designer", "React developer", "Next.js portfolio", "web development", "Joan Karstrom", "jCode Studio"],
+  title: "jCode Studio LLC™ | Built to feel. Designed to last.",
+  description: "jCode Studio LLC™ — Joan Karstrom's creative development studio. Frontend development and UX design that puts craft first, from concept to launch.",
+  keywords: ["frontend developer", "UX designer", "React developer", "Next.js", "web development", "Joan Karstrom", "jCode Studio", "UI design", "brand identity"],
   icons: {
     icon: './logos/Favicon.svg',
   },
   openGraph: {
-    title: "jCode Studio | Frontend Developer & UX Designer - Joan Karstrom",
-    description: "Building clean, accessible web experiences with React and Next.js. Explore projects, services, and my creative process.",
+    title: "jCode Studio LLC™ | Built to feel. Designed to last.",
+    description: "jCode Studio LLC™ — Frontend development and UX design that puts craft first. Explore web projects, apps, and the studio's creative process.",
     url: "https://www.jcodestudio.com",
     siteName: "jCode Studio",
     images: [
