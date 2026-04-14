@@ -7,7 +7,10 @@ import nextPlugin from "@next/eslint-plugin-next";
 export default defineConfig([
   { files: ["**/*.{js,mjs,cjs,jsx}"], plugins: { js }, extends: ["js/recommended"] },
   { files: ["**/*.{js,mjs,cjs,jsx}"], languageOptions: { globals: globals.browser } },
-  pluginReact.configs.flat.recommended,
+  {
+    ...pluginReact.configs.flat.recommended,
+    settings: { react: { version: "detect" } },
+  },
   {
     plugins: { "@next/next": nextPlugin },
     rules: {

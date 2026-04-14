@@ -211,7 +211,7 @@ export default function ServicesPage() {
               { num: '01', label: 'Research', body: 'Understanding user behavior, goals, and obstacles before anything else. Empathy is the foundation.' },
               { num: '02', label: 'Wireframing', body: 'Sketching out intuitive interfaces and streamlined user flows before diving into visual design.' },
               { num: '03', label: 'Implementation', body: 'Turning structure into reality — clean, accessible code meets thoughtful interaction design.' },
-            ].map(({ num, label, body }, i) => (
+            ].map(({ num, label, body }) => (
               <div key={num} className="flex-1 flex flex-col items-center text-center px-6 mb-10 md:mb-0 group">
                 {/* Circle */}
                 <div className="w-20 h-20 rounded-full border-2 border-white/20 flex items-center justify-center mb-6 bg-white/5 group-hover:border-pink/50 group-hover:bg-pink/10 transition-all duration-300">

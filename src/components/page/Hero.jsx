@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Typewriter } from 'react-simple-typewriter';
 import ClientOnly from '../ClientOnly';
 
@@ -71,18 +72,18 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 mt-2">
-          <a
+          <Link
             href="/web-projects"
-            className="inline-block bg-darkpurple text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-brand-vivid hover:shadow-xl transition-all duration-300 font-vietnam"
+            className="inline-block bg-darkpurple text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 font-vietnam"
           >
             View My Work
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             className="inline-block border-2 border-darkpurple/30 text-darkpurple font-semibold px-8 py-4 rounded-full hover:border-darkpurple hover:bg-darkpurple/5 transition-all duration-300 font-vietnam"
           >
             Let&apos;s Connect
-          </a>
+          </Link>
         </div>
 
       </div>

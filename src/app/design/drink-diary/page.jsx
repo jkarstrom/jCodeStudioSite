@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -98,6 +99,12 @@ function ScoreBar({ label, value, highlight }) {
   );
 }
 
+ScoreBar.propTypes = {
+  label: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
+  highlight: PropTypes.bool,
+};
+
 /* ─── Wireframe phone component ─────────────────────────────────── */
 
 function WireframePhone({ label, children }) {
@@ -114,6 +121,11 @@ function WireframePhone({ label, children }) {
     </div>
   );
 }
+
+WireframePhone.propTypes = {
+  label: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};
 
 /* Wireframe primitives */
 const WF = {
