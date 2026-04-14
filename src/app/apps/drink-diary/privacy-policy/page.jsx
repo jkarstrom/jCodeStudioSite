@@ -13,7 +13,7 @@ export default function DrinkDiaryPrivacyPolicy() {
       <div className="max-w-2xl mx-auto bg-white rounded-3xl shadow-sm p-10 md:p-14">
 
         {/* Header */}
-        <p className="text-xs font-bold tracking-widest uppercase text-[#687D31] mb-2">jCode Studio</p>
+        <p className="text-xs font-bold tracking-widest uppercase text-[#687D31] mb-2">jCode Studio LLC™</p>
         <h1 className="text-3xl md:text-4xl font-bold text-[#19350C] mb-2">Privacy Policy</h1>
         <p className="text-sm text-gray-400 pb-8 mb-8 border-b border-[#E2E0D9]">
           Drink Diary &nbsp;&middot;&nbsp; Effective Date: March 6, 2026 &nbsp;&middot;&nbsp; Last Updated: March 6, 2026
@@ -21,7 +21,7 @@ export default function DrinkDiaryPrivacyPolicy() {
 
         {/* Section 1 */}
         <Section title="1. Introduction">
-          <p>Welcome to Drink Diary (&ldquo;the App&rdquo;), operated by jCode Studio (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;). This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our mobile application.</p>
+          <p>Welcome to Drink Diary (&ldquo;the App&rdquo;), operated by jCode Studio LLC™ (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;). This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our mobile application.</p>
           <p>By using Drink Diary, you agree to the collection and use of information in accordance with this policy. If you do not agree, please do not use the App.</p>
         </Section>
 
@@ -135,7 +135,7 @@ export default function DrinkDiaryPrivacyPolicy() {
         <Section title="12. Contact Us">
           <p>If you have any questions about this Privacy Policy, your data, or your rights, please contact us:</p>
           <ul className="list-disc pl-5 space-y-1.5 text-sm text-gray-700">
-            <li><strong>jCode Studio</strong></li>
+            <li><strong>jCode Studio LLC™</strong></li>
             <li>Website: <ExternalLink href="https://www.jcodestudio.com/apps/drink-diary">https://www.jcodestudio.com/apps/drink-diary</ExternalLink></li>
             <li>Email: <EmailLink /></li>
           </ul>
@@ -143,7 +143,7 @@ export default function DrinkDiaryPrivacyPolicy() {
 
         {/* Footer */}
         <div className="mt-12 pt-6 border-t border-[#E2E0D9] text-center text-xs text-gray-400">
-          &copy; 2026 jCode Studio &nbsp;&middot;&nbsp;{" "}
+          &copy; 2026 jCode Studio LLC™ &nbsp;&middot;&nbsp;{" "}
           <Link href="/apps/drink-diary" className="text-[#687D31] hover:underline">
             Drink Diary
           </Link>

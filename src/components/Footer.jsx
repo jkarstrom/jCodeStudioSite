@@ -17,7 +17,7 @@ const Footer = () => {
             <FaEnvelope className="text-darkpurple hover:text-lightpurple  text-2xl" />
           </Link>
         </div>
-        <p className="text-darkpurple text-sm">© 2025 Joan | All Rights Reserved.</p>
+        <p className="text-darkpurple text-sm">© 2025 jCode Studio LLC™ | All Rights Reserved.</p>
       </div>
     </footer>
   );

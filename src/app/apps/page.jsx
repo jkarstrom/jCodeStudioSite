@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Apps | jCode Studio",
-  description: "Mobile apps designed and built by jCode Studio.",
+  description: "Mobile apps designed and built by jCode Studio LLC™.",
 };
 
 const apps = [
@@ -33,7 +33,7 @@ export default function AppsPage() {
           {apps.length} {apps.length === 1 ? "App" : "Apps"}
         </div>
         <h1 className="font-fredoka font-bold text-4xl md:text-6xl text-[#19350C] mb-4">
-          Apps by jCode Studio
+          Apps by jCode Studio LLC™
         </h1>
         <p className="text-[#2d4a1a]/70 text-lg max-w-xl mx-auto">
           Mobile experiences designed to feel delightful &mdash; built with care for the people who use them.

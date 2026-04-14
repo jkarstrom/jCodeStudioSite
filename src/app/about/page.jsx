@@ -105,7 +105,7 @@ export default function About() {
                 className="text-lg md:text-xl text-black leading-relaxed max-w-xl"
               >
                 Hi, I&apos;m <span className="font-bold text-darkpurple">Joan</span> — the creative developer and UX designer behind{' '}
-                <span className="font-bold text-darkpurple">jCode Studio</span>.
+                <span className="font-bold text-darkpurple">jCode Studio LLC™</span>.
                 I blend technical expertise with artistic expression to build digital experiences that feel
                 as good as they look.
               </motion.p>

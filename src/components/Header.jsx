@@ -28,7 +28,8 @@ export default function Header() {
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
             <li><Link href="/about" className="text-darkpurple hover:text-lightpurple">About</Link></li>
-            <li><Link href="/projects" className="text-darkpurple hover:text-lightpurple">Projects</Link></li>
+            <li><Link href="/web-projects" className="text-darkpurple hover:text-lightpurple">Web Projects</Link></li>
+            <li><Link href="/design" className="text-darkpurple hover:text-lightpurple">Design</Link></li>
             <li><Link href="/services" className="text-darkpurple hover:text-lightpurple">Services</Link></li>
             <li><Link href="/apps" className="text-darkpurple hover:text-lightpurple">Apps</Link></li>
             <li><Link href="/contact" className="text-darkpurple hover:text-lightpurple">Contact</Link></li>
@@ -40,7 +41,8 @@ export default function Header() {
         <nav className="md:hidden mt-4">
           <ul className="flex flex-col space-y-2 items-center">
             <li><Link href="/about" className="font-vietnam text-darkpurple hover:text-lightpurple">About</Link></li>
-            <li><Link href="/projects" className="text-darkpurple hover:text-lightpurple">Projects</Link></li>
+            <li><Link href="/web-projects" className="text-darkpurple hover:text-lightpurple">Web Projects</Link></li>
+            <li><Link href="/design" className="text-darkpurple hover:text-lightpurple">Design</Link></li>
             <li><Link href="/services" className="text-darkpurple hover:text-lightpurple">Services</Link></li>
             <li><Link href="/apps" className="text-darkpurple hover:text-lightpurple">Apps</Link></li>
             <li><Link href="/contact" className="text-darkpurple hover:text-lightpurple">Contact</Link></li>

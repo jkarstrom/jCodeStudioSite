@@ -8,7 +8,7 @@ const adventures = [
     emoji: '💻',
     title: 'Frontend Development',
     description: 'Clean, responsive, and accessible websites built with React & Next.js — tailored for performance and modern user expectations.',
-    href: '/projects',
+    href: '/web-projects',
     accentColor: 'border-l-sky',
     bgHover: 'hover:bg-powder/30',
   },
