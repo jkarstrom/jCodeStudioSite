@@ -9,28 +9,35 @@ export default {
         vietnam: ['Be Vietnam Pro', 'sans-serif'],
       },
       colors: {
-        black: '#4c4654',
-        white: '#ffffff',
-        grey: '#f1f2f2',
+        // ── Core Palette ──────────────────────────────────────────
+        black:       '#4c4654',
+        white:       '#ffffff',
+        grey:        '#f1f2f2',
         lightpurple: '#e9e2ee',
-        darkpurple: '#5e4875',
+        darkpurple:  '#5e4875',
         whitepurple: '#faf7ff',
-        lilac: '#d6d6e9',
+        lilac:       '#d6d6e9',
         // Greens
-        green: '#cbe6c0',
-        mint: '#c8f0e8',
-        sage: '#d4e8d1',
+        green:       '#cbe6c0',
+        mint:        '#c8f0e8',
+        sage:        '#d4e8d1',
         // Pinks
-        pink: '#eedbe6',
-        rose: '#f5d5e0',
-        blush: '#fce4ec',
+        pink:        '#eedbe6',
+        rose:        '#f5d5e0',
+        blush:       '#fce4ec',
         // Blues
-        sky: '#d6eaf8',
-        powder: '#e3f2fd',
-        periwinkle: '#c5cae9',
+        sky:         '#d6eaf8',
+        powder:      '#e3f2fd',
+        periwinkle:  '#c5cae9',
         // Accents
-        peach: '#ffe5d9',
-        lavender: '#e8e0f0',
+        peach:       '#ffe5d9',
+        lavender:    '#e8e0f0',
+        // ── Extended Brand Colors ─────────────────────────────────
+        'brand':       '#5e4875',
+        'brand-vivid': '#7B4FA0',
+        'brand-light': '#faf7ff',
+        'cream':       '#F5F3EE',
+        'ink':         '#2d2438',
       },
       fontSize: {
         // ── Brand Type Scale ──────────────────────────────────────
@@ -49,14 +56,6 @@ export default {
         'caption':    ['0.8125rem', { lineHeight: '1.5' }],
         'label':      ['0.75rem',   { lineHeight: '1.4', letterSpacing: '0.08em' }],
         'micro':      ['0.6875rem', { lineHeight: '1.4', letterSpacing: '0.1em'  }],
-      },
-      colors: {
-        // ── Extended Brand Colors ─────────────────────────────────
-        'brand':         '#5e4875',   // primary — darkpurple alias
-        'brand-vivid':   '#7B4FA0',   // more saturated CTA purple
-        'brand-light':   '#faf7ff',   // whitepurple alias
-        'cream':         '#F5F3EE',   // warm off-white backgrounds
-        'ink':           '#2d2438',   // near-black for body text
       },
       animation: {
         'bounce-slow': 'bounce 3s infinite',
