@@ -13,7 +13,7 @@ const Footer = () => {
           <Link href="https://github.com/jkarstrom" target="_blank" aria-label="GitHub profile">
             <FaGithub className="text-darkpurple hover:text-lightpurple  text-2xl" />
           </Link>
-          <Link href="mailto:jcodestudio@email.com" aria-label="Send an email">
+          <Link href="mailto:info@jcodestudio.com" aria-label="Send an email">
             <FaEnvelope className="text-darkpurple hover:text-lightpurple  text-2xl" />
           </Link>
         </div>

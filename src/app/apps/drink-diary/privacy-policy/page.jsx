@@ -177,8 +177,8 @@ function ExternalLink({ href, children }) {
 
 function EmailLink() {
   return (
-    <a href="mailto:joan@jcodestudio.com" className="text-[#687D31] hover:underline">
-      joan@jcodestudio.com
+    <a href="mailto:info@jcodestudio.com" className="text-[#687D31] hover:underline">
+      info@jcodestudio.com
     </a>
   );
 }

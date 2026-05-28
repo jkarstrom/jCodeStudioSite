@@ -267,7 +267,7 @@ export default function DrinkDiaryPage() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href="mailto:joan@jcodestudio.com"
+            href="mailto:info@jcodestudio.com"
             className="inline-block bg-darkpurple text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-[#19350C] transition-all duration-200"
           >
             Contact Support

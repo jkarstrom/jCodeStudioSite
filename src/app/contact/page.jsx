@@ -25,7 +25,7 @@ export default function Contact() {
       <div className="flex flex-col md:flex-row gap-6">
         {/* Email Button */}
         <a 
-          href="mailto:joan@jcodestudio.com" 
+          href="mailto:info@jcodestudio.com"
           className="bg-pink text-darkpurple font-semibold py-3 px-6 rounded-lg shadow hover:bg-lightpurple transition"
         >
           Send Me an Email!
