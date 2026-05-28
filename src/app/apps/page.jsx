@@ -15,7 +15,8 @@ const apps = [
     description:
       "Snap it. Log it. Share it. Drink Diary lets you capture the drinks you love with photos, track your habits over time, and share with friends.",
     platform: "iOS",
-    status: "Coming Soon",
+    status: "Live on App Store",
+    appStoreUrl: "https://apps.apple.com/us/app/my-drink-diary/id6761795139",
     tags: ["React Native", "Firebase", "iOS"],
   },
 ];
@@ -60,7 +61,8 @@ export default function AppsPage() {
                   <h2 className="font-fredoka font-bold text-2xl text-[#19350C]">
                     {app.name}
                   </h2>
-                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-sage text-[#19350C]">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-[#e8f5e0] text-[#19350C]">
+                    <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block animate-pulse" />
                     {app.status}
                   </span>
                   <span className="text-xs font-medium px-3 py-1 rounded-full bg-[#F5F4F0] text-[#687D31] border border-[#687D31]/20">
