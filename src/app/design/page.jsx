@@ -29,8 +29,8 @@ const designWork = [
     tags: ["Web", "Figma", "Gamification", "UX Research"],
     accentColor: "#1e3a5f",
     accentLight: "#4a7cb5",
-    link: "/web-projects/safespace-students",
-    linkLabel: "View Project",
+    link: "/design/safe-space",
+    linkLabel: "View Case Study",
   },
   {
     title: "GGRC Data Portal",

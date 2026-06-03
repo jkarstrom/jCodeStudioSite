@@ -41,7 +41,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="w-screen overflow-x-hidden">
-      <body className={`${beVietnamPro.variable} font-vietnam flex flex-col min-h-screen`}>
+      <body suppressHydrationWarning className={`${beVietnamPro.variable} font-vietnam flex flex-col min-h-screen`}>
         <Header />
         <main className="flex-grow w-full relative">
           {children}
