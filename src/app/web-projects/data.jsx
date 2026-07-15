@@ -86,21 +86,6 @@ export const projects = [
       `
     },
     {
-      slug: 'kesslerkin',
-      title: 'Kessler Kin',
-      description: 'A professional client website built with Next.js and Sanity CMS, giving the client full content control without touching a line of code.',
-      image: '/images/sydneyZsite.png',
-      stack: ['Next.js', 'Sanity CMS', 'Vercel'],
-      live: 'https://www.kesslerkin.com',
-      content: `
-      Kessler Kin is a clean, professional website built for a client who needed full ownership of their content from day one. The brief was clear: warm, human design — polished but approachable — with a CMS that anyone can use confidently.
-
-      The solution paired Next.js on the front end with Sanity.io as the content management backbone. Sanity's Studio gives the client a fully customized editing interface to update pages, images, and copy independently, with no developer needed for day-to-day changes.
-
-      The build was intentionally efficient — scoped tightly to what the client actually needed rather than engineered for hypothetical future requirements. Fast to launch, easy to maintain, and designed to grow alongside the client's needs.
-      `,
-    },
-    {
       slug: 'jcodestudiosite',
       title: 'jCode Studio Site',
       description: 'The site you are on right now - explore a bit and see what I can do!',
