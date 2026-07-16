@@ -7,7 +7,10 @@ export const metadata = {
     "UI/UX design work by Joan Karstrom — Figma prototypes, user flows, wireframes, and product design case studies.",
 };
 
-const tools = ["Figma", "FigJam", "Prototyping", "Wireframing", "User Research", "Design Systems", "Accessibility"];
+const tools = [
+  "Figma", "FigJam", "Prototyping", "Wireframing",
+  "User Research", "Design Systems", "Accessibility",
+];
 
 const designWork = [
   {
@@ -38,116 +41,233 @@ const designWork = [
     description:
       "Designed an accessible, filterable crime data dashboard — balancing information density with clarity for a broad public audience.",
     tags: ["Dashboard", "Data Viz", "Accessibility", "Figma"],
-    accentColor: "#2d1b4e",
-    accentLight: "#7b5ea8",
-    link: "/web-projects/ggrc-site",
-    linkLabel: "View Project",
+    accentColor: "#0d1f4a",
+    accentLight: "#a8bc2e",
+    link: "/design/ggrc-site",
+    linkLabel: "View Case Study",
+  },
+  {
+    title: "GGRC 2025 Annual Report",
+    category: "Editorial Design",
+    description:
+      "Designed the GGRC's 2025 annual report as an interactive web experience — turning dense crime research data into a clear, compelling visual narrative.",
+    tags: ["Editorial", "Data Viz", "Web", "Typography"],
+    accentColor: "#1a0f2e",
+    accentLight: "#5c3d8a",
+    link: "/design/ggrc-annual-report",
+    linkLabel: "View Case Study",
   },
 ];
 
 export default function DesignPage() {
+  const [featured, ...rest] = designWork;
+
   return (
     <main className="w-full font-vietnam text-foreground">
 
-      {/* Hero */}
-      <section className="py-24 text-center px-6 bg-whitepurple relative overflow-hidden">
-        <div className="absolute -top-10 -right-10 w-48 h-48 bg-pink rounded-full opacity-20 blur-2xl pointer-events-none" />
-        <div className="absolute bottom-10 -left-10 w-36 h-36 bg-lilac rounded-full opacity-25 blur-2xl pointer-events-none" />
-
-        <div className="inline-flex items-center gap-2 bg-darkpurple/10 text-darkpurple text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
-          UI/UX Design
+      {/* Hero — tight editorial split */}
+      <section className="pt-14 pb-10 px-6 md:px-16 bg-whitepurple relative overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse at 90% 30%, #eedbe6 0%, transparent 50%), radial-gradient(ellipse at 5% 100%, #d6d6e9 0%, transparent 45%)",
+            opacity: 0.5,
+          }}
+        />
+        <div className="max-w-7xl mx-auto relative">
+          <div className="flex items-center gap-3 mb-8">
+            <span className="block w-8 h-px bg-darkpurple" />
+            <span className="text-darkpurple text-xs font-bold tracking-[0.15em] uppercase">
+              UI/UX Design
+            </span>
+          </div>
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-20">
+            <h1 className="font-fredoka font-bold text-h1 text-ink leading-[1.05] shrink-0">
+              Designed<br />with Intent.
+            </h1>
+            <p className="text-body-lg text-darkpurple max-w-xs leading-relaxed pb-1">
+              Good design is invisible — it removes friction, guides attention,
+              and makes complex things feel simple.
+            </p>
+          </div>
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink via-darkpurple to-lilac">
-          Designed with Intent
-        </h1>
-        <p className="text-lg text-darkpurple max-w-2xl mx-auto leading-relaxed">
-          Good design is invisible — it removes friction, guides attention, and makes complex things feel simple. Here&apos;s how I approach it.
-        </p>
       </section>
 
-      {/* Design Work */}
-      <section className="py-20 px-6" style={{ background: 'linear-gradient(to bottom, #faf7ff, #ffffff, #fce7f3)' }}>
-        <div className="max-w-6xl mx-auto space-y-8">
-          {designWork.map((item, i) => (
-            <div
-              key={item.title}
-              className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-darkpurple hover:-translate-y-1"
-            >
-              <div className="md:grid md:grid-cols-[1fr_2fr]">
-                {/* Color swatch side */}
-                <div
-                  className="h-48 md:h-auto min-h-[14rem] flex items-center justify-center relative overflow-hidden"
-                  style={{ background: `linear-gradient(135deg, ${item.accentColor}, ${item.accentLight})` }}
-                >
-                  <span className="font-fredoka font-bold text-8xl text-white/10 select-none absolute">
-                    {String(i + 1).padStart(2, '0')}
+      {/* Projects — bento grid */}
+      <section
+        className="py-10 px-6 md:px-16"
+        style={{ background: "linear-gradient(to bottom, #faf7ff, #ffffff 60%, #fce7f3)" }}
+      >
+        <div className="max-w-7xl mx-auto space-y-6">
+
+          {/* Featured card */}
+          <Link
+            href={featured.link}
+            className="group block bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-darkpurple/10 hover:border-darkpurple/30 hover:-translate-y-1"
+          >
+            <div className="md:grid md:grid-cols-[45%_55%]">
+              <div
+                className="h-56 md:h-auto min-h-[360px] flex flex-col items-center justify-center relative overflow-hidden"
+                style={{
+                  background: `linear-gradient(145deg, ${featured.accentColor} 0%, ${featured.accentLight} 100%)`,
+                }}
+              >
+                <span className="font-fredoka font-bold text-[11rem] text-white/[0.07] select-none absolute leading-none">
+                  01
+                </span>
+                <div className="relative z-10 text-center px-6">
+                  <span className="font-fredoka font-bold text-2xl text-white/90 tracking-wide block mb-2">
+                    {featured.category}
                   </span>
-                  <span className="relative z-10 font-fredoka font-bold text-2xl text-white/80 tracking-wide">
+                  <span className="text-white/45 text-xs font-bold tracking-widest uppercase">
+                    Featured
+                  </span>
+                </div>
+              </div>
+              <div className="p-10 md:p-14 flex flex-col justify-center">
+                <h2 className="font-fredoka font-bold text-h2 text-ink mb-4 group-hover:text-darkpurple transition-colors leading-tight">
+                  {featured.title}
+                </h2>
+                <p className="text-gray-600 text-body-base mb-8 leading-relaxed max-w-md">
+                  {featured.description}
+                </p>
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {featured.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs font-semibold bg-lightpurple px-3 py-1.5 rounded-full text-darkpurple border border-darkpurple/15"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <span className="inline-flex items-center gap-2 text-darkpurple font-semibold group-hover:gap-4 transition-all duration-300">
+                  {featured.linkLabel}{" "}
+                  <span className="transition-transform group-hover:translate-x-1">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          {/* Secondary cards — 3-column grid */}
+          <div className="grid md:grid-cols-3 gap-6">
+            {rest.map((item, i) => (
+              <Link
+                key={item.title}
+                href={item.link}
+                className="group block bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-darkpurple/10 hover:border-darkpurple/30 hover:-translate-y-1"
+              >
+                <div
+                  className="h-40 flex items-center justify-center relative overflow-hidden"
+                  style={{
+                    background: `linear-gradient(145deg, ${item.accentColor} 0%, ${item.accentLight} 100%)`,
+                  }}
+                >
+                  <span className="font-fredoka font-bold text-[6rem] text-white/[0.07] select-none absolute leading-none">
+                    {String(i + 2).padStart(2, "0")}
+                  </span>
+                  <span className="relative z-10 font-fredoka font-bold text-lg text-white/85 tracking-wide text-center px-4">
                     {item.category}
                   </span>
                 </div>
-
-                {/* Content side */}
-                <div className="p-8 md:p-10 flex flex-col justify-center">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-3 text-black group-hover:text-darkpurple transition-colors">
+                <div className="p-7 flex flex-col">
+                  <h2 className="font-fredoka font-bold text-h4 text-ink mb-2 group-hover:text-darkpurple transition-colors leading-tight">
                     {item.title}
                   </h2>
-                  <p className="text-gray-600 mb-6 leading-relaxed">{item.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <p className="text-gray-600 text-body-sm mb-5 leading-relaxed">
+                    {item.description}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5 mb-5">
                     {item.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-xs font-medium bg-gradient-to-r from-lightpurple to-pink px-3 py-1.5 rounded-full text-black border border-darkpurple/20"
+                        className="text-xs font-semibold bg-lightpurple px-3 py-1 rounded-full text-darkpurple border border-darkpurple/15"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                  <Link
-                    href={item.link}
-                    className="inline-flex items-center gap-2 text-darkpurple font-medium group-hover:gap-3 transition-all duration-300 w-fit"
-                  >
-                    <span>{item.linkLabel}</span>
-                    <span className="transform group-hover:translate-x-1 transition-transform">→</span>
-                  </Link>
+                  <span className="inline-flex items-center gap-2 text-darkpurple font-semibold mt-auto group-hover:gap-3 transition-all duration-300 text-sm">
+                    {item.linkLabel}{" "}
+                    <span className="transition-transform group-hover:translate-x-1">→</span>
+                  </span>
                 </div>
-              </div>
-            </div>
-          ))}
+              </Link>
+            ))}
+          </div>
+
         </div>
       </section>
 
-      {/* Tools */}
-      <section className="py-16 px-6 bg-darkpurple">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-white/50 text-xs font-bold tracking-widest uppercase mb-6">Design Toolkit</p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {tools.map((tool) => (
-              <span
-                key={tool}
-                className="text-sm font-medium text-white/70 border border-white/20 px-5 py-2 rounded-full"
-              >
-                {tool}
-              </span>
-            ))}
+      {/* Tools — dual marquee */}
+      <section className="py-12 bg-darkpurple overflow-hidden">
+        <p className="text-center text-white/40 text-xs font-bold tracking-widest uppercase mb-5">
+          Design Toolkit
+        </p>
+        <div className="space-y-3">
+          <div className="flex overflow-hidden">
+            <div className="flex gap-4 animate-marquee whitespace-nowrap shrink-0">
+              {[...tools, ...tools].map((tool, i) => (
+                <span
+                  key={i}
+                  className="text-sm font-semibold text-white/60 border border-white/20 px-5 py-2 rounded-full"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+            <div className="flex gap-4 animate-marquee whitespace-nowrap shrink-0" aria-hidden>
+              {[...tools, ...tools].map((tool, i) => (
+                <span
+                  key={i}
+                  className="text-sm font-semibold text-white/60 border border-white/20 px-5 py-2 rounded-full"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="flex overflow-hidden">
+            <div className="flex gap-4 animate-marquee-reverse whitespace-nowrap shrink-0">
+              {[...tools, ...tools].map((tool, i) => (
+                <span
+                  key={i}
+                  className="text-sm font-semibold text-white/30 border border-white/10 px-5 py-2 rounded-full"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+            <div className="flex gap-4 animate-marquee-reverse whitespace-nowrap shrink-0" aria-hidden>
+              {[...tools, ...tools].map((tool, i) => (
+                <span
+                  key={i}
+                  className="text-sm font-semibold text-white/30 border border-white/10 px-5 py-2 rounded-full"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 bg-lilac text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-darkpurple mb-4">
+      <section className="py-16 px-6 bg-lilac text-center">
+        <h2 className="font-fredoka font-bold text-h2 text-darkpurple mb-4">
           Need a Design Partner?
         </h2>
-        <p className="text-gray-700 text-lg mb-8 max-w-xl mx-auto">
-          Whether you&apos;re starting from scratch or refining an existing product, I&apos;d love to help you think through the experience.
+        <p className="text-gray-700 text-body-base mb-8 max-w-md mx-auto leading-relaxed">
+          Whether you&apos;re starting from scratch or refining an existing
+          product, I&apos;d love to help you think through the experience.
         </p>
-        <a
+        <Link
           href="/contact"
-          className="inline-block bg-darkpurple text-white font-medium px-8 py-4 rounded-full shadow-lg hover:bg-pink hover:text-black transition-all duration-300 hover:shadow-xl"
+          className="inline-block bg-darkpurple text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-ink hover:shadow-xl transition-all duration-300"
         >
           Let&apos;s Connect
-        </a>
+        </Link>
       </section>
 
     </main>
