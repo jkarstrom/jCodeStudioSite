@@ -11,21 +11,30 @@ export default function Header() {
 
   return (
     <header className="bg-whitepurple w-full py-1 px-4 sticky top-0 z-50">
+      {/* Skip to main content — first focusable element on the page */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-darkpurple focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-semibold"
+      >
+        Skip to main content
+      </a>
+
       <div className="container mx-auto flex justify-between items-center h-[100px]">
-        <Link href="/" className="flex items-center space-x-2">
-          <Image src="/logos/jCode Logo.png" alt="jCode Studio Logo" width={200} height={200} />
-          <span className="sr-only">jCode Studio Logo</span>
+        <Link href="/" className="flex items-center space-x-2" aria-label="jCode Studio — home">
+          <Image src="/logos/jCode Logo.png" alt="" width={200} height={200} aria-hidden="true" />
         </Link>
 
         <button
           className="md:hidden text-2xl text-gray-700"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle navigation menu"
+          aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={isOpen}
+          aria-controls="mobile-nav"
         >
           {isOpen ? <HiOutlineX /> : <HiOutlineMenu />}
         </button>
 
-        <nav className="hidden md:block">
+        <nav aria-label="Main navigation" className="hidden md:block">
           <ul className="flex space-x-6">
             <li><Link href="/about" className="text-darkpurple hover:text-lightpurple">About</Link></li>
             <li><Link href="/web-projects" className="text-darkpurple hover:text-lightpurple">Web Projects</Link></li>
@@ -38,7 +47,7 @@ export default function Header() {
       </div>
 
       {isOpen && (
-        <nav className="md:hidden mt-4">
+        <nav id="mobile-nav" aria-label="Mobile navigation" className="md:hidden mt-4">
           <ul className="flex flex-col space-y-2 items-center">
             <li><Link href="/about" className="font-vietnam text-darkpurple hover:text-lightpurple">About</Link></li>
             <li><Link href="/web-projects" className="text-darkpurple hover:text-lightpurple">Web Projects</Link></li>

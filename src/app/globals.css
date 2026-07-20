@@ -41,6 +41,13 @@ html, body {
   background-color: white;
 }
 
+/* ── Focus visible — replaces browser default stripped by Tailwind Preflight ── */
+:focus-visible {
+  outline: 2px solid #5e4875;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 .text-shadow-sm {
   text-shadow: 0 0 4px rgba(169, 154, 189, 0.5);
 }

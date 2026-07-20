@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="w-screen overflow-x-hidden">
       <body suppressHydrationWarning className={`${beVietnamPro.variable} font-vietnam flex flex-col min-h-screen`}>
         <Header />
-        <main className="flex-grow w-full relative">
+        <main id="main-content" className="flex-grow w-full relative">
           {children}
         </main>
         <Footer />

@@ -55,7 +55,7 @@ export default function AdventureCards() {
             transition={{ duration: 0.4, delay: index * 0.1 }}
             className={`bg-white rounded-2xl shadow-md p-6 text-left space-y-4 border border-lightpurple border-l-4 ${item.accentColor} ${item.bgHover} hover:shadow-lg transition`}
           >
-            <div className="text-4xl">{item.emoji}</div>
+            <div className="text-4xl" aria-hidden="true">{item.emoji}</div>
             <h3 className="text-xl font-semibold text-darkpurple">{item.title}</h3>
             <p className="text-gray-700 text-sm leading-relaxed">{item.description}</p>
           </motion.a>
