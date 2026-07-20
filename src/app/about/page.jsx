@@ -3,50 +3,93 @@
 import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { HiCode, HiSparkles, HiHeart } from 'react-icons/hi';
-import { FaUniversalAccess, FaPalette, FaLaptopCode } from 'react-icons/fa';
+import { HiCode, HiHeart } from 'react-icons/hi';
+import { FaUniversalAccess, FaPalette, FaLaptopCode, FaCheck } from 'react-icons/fa';
+import { SiGoogle, SiMeta } from 'react-icons/si';
 import JourneyTimeline from '@/components/page/JourneyTimeline';
 import TechStack from '@/components/page/TechStack';
+import FunFacts from '@/components/page/FunFacts';
 
 const skills = [
   {
     icon: FaLaptopCode,
     title: 'Web Development',
-    description: 'Clean, scalable React/Next.js code built for performance and polish.',
+    description:
+      "I build clean, performant, and scalable web apps with React and Next.js — writing code that's easy to maintain, fast to load, and a joy to use.",
     color: 'bg-sky',
     iconColor: '#0ea5e9',
+    tags: ['React', 'Next.js', 'Tailwind CSS', 'TypeScript', 'REST APIs'],
   },
   {
     icon: FaPalette,
     title: 'UX + UI Design',
-    description: 'User-first designs that balance function and aesthetic with Figma, wireframes, and flows.',
+    description:
+      'I design with users in mind — mapping flows, building wireframes, and crafting interfaces that look beautiful and feel effortless from the first click.',
     color: 'bg-rose',
     iconColor: '#ec4899',
+    tags: ['Figma', 'User Research', 'Wireframing', 'Prototyping', 'Design Systems'],
   },
   {
     icon: FaUniversalAccess,
     title: 'Accessibility',
-    description: 'Inclusive, thoughtful interfaces that work for everyone across all devices.',
+    description:
+      'I bake accessibility into every layer of the product — from semantic HTML to keyboard navigation — so no one gets left behind.',
     color: 'bg-lavender',
     iconColor: '#7c3aed',
+    tags: ['WCAG 2.1 AA', 'ARIA', 'Keyboard Nav', 'Screen Readers', 'Color Contrast'],
   },
 ];
 
 const approaches = [
   {
     icon: HiHeart,
-    text: 'Focus on user experience from start to finish',
-    color: 'text-rose',
+    headline: 'User First, Always',
+    text: 'Every decision I make starts with the person using it. Before any design or code, I map flows, uncover friction, and look for moments where the experience can genuinely delight someone.',
+    iconBg: 'bg-rose',
+    bar: 'bg-rose',
   },
   {
-    icon: HiSparkles,
-    text: 'Build accessible, responsive, and joyful products',
-    color: 'text-peach',
+    icon: FaUniversalAccess,
+    headline: 'Accessible by Default',
+    text: "I hold myself to WCAG standards on every project — not because I have to, but because building for everyone makes the product better. Inclusive design isn't an add-on; it's the work.",
+    iconBg: 'bg-lavender',
+    bar: 'bg-periwinkle',
   },
   {
     icon: HiCode,
-    text: 'Collaborate like a creative partner, not just a coder',
-    color: 'text-sky',
+    headline: 'Creative Partner, Not Just a Coder',
+    text: "I push back when something doesn't serve the user, bring ideas nobody asked for, and treat every project like I have a real stake in its success — because I do.",
+    iconBg: 'bg-sky',
+    bar: 'bg-sky',
+  },
+];
+
+const certificates = [
+  {
+    issuer: 'Google',
+    icon: SiGoogle,
+    iconColor: '#4285F4',
+    iconBg: 'bg-sky',
+    accentBorder: 'border-sky',
+    title: 'Google UX Design Certificate',
+    courses: [
+      'Foundations of User Experience (UX) Design',
+      'Start the UX Design Process: Empathize, Define, and Ideate',
+      'Build Wireframes and Low-Fidelity Prototypes',
+      'Conduct UX Research and Test Early Concepts',
+    ],
+  },
+  {
+    issuer: 'Meta',
+    icon: SiMeta,
+    iconColor: '#0082fb',
+    iconBg: 'bg-powder',
+    accentBorder: 'border-periwinkle',
+    title: 'Meta Front-End Developer Certificate',
+    courses: [
+      'Introduction to Front-End Development',
+      'Programming with JavaScript',
+    ],
   },
 ];
 
@@ -117,15 +160,23 @@ export default function About() {
       {/* Skills Section */}
       <section className="px-6 py-20 bg-white">
         <div className="max-w-5xl mx-auto">
-          <motion.h2
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl font-vietnam font-bold text-darkpurple mb-12 text-center"
+            className="text-center mb-12"
           >
-            What I Do
-          </motion.h2>
+            <p className="text-xs font-bold tracking-widest uppercase text-darkpurple font-vietnam mb-3">
+              My expertise
+            </p>
+            <h2 className="text-3xl md:text-4xl font-vietnam font-bold text-darkpurple mb-4">
+              What I Do
+            </h2>
+            <p className="text-lg text-black font-vietnam max-w-2xl mx-auto leading-relaxed">
+              From concept to launch — I handle both the design and the code, so nothing gets lost in translation.
+            </p>
+          </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {skills.map((skill, index) => (
@@ -136,7 +187,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ scale: 1.03, y: -8 }}
-                className={`${skill.color} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300`}
+                className={`${skill.color} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col`}
               >
                 <skill.icon
                   className="text-5xl mb-4"
@@ -145,9 +196,19 @@ export default function About() {
                 <h3 className="text-xl font-vietnam font-bold text-darkpurple mb-3">
                   {skill.title}
                 </h3>
-                <p className="text-black leading-relaxed">
+                <p className="text-black leading-relaxed text-sm mb-5 flex-1">
                   {skill.description}
                 </p>
+                <div className="flex flex-wrap gap-2">
+                  {skill.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-white text-darkpurple text-xs font-vietnam font-semibold px-3 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </motion.div>
             ))}
           </div>
@@ -157,36 +218,135 @@ export default function About() {
       {/* Tech Stack Section */}
       <TechStack />
 
-      {/* My Approach Section */}
+      {/* Certifications Section */}
       <section className="px-6 py-20 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <motion.h2
+        <div className="max-w-5xl mx-auto">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl font-vietnam font-bold text-darkpurple mb-12 text-center"
+            className="text-center mb-12"
           >
-            My Approach
-          </motion.h2>
+            <p className="text-xs font-bold tracking-widest uppercase text-darkpurple font-vietnam mb-3">
+              Credentials
+            </p>
+            <h2 className="text-3xl md:text-4xl font-vietnam font-bold text-darkpurple mb-4">
+              Certifications
+            </h2>
+            <p className="text-lg text-black font-vietnam max-w-2xl mx-auto leading-relaxed">
+              Professional certificates that formalize the skills I use every day.
+            </p>
+          </motion.div>
 
-          <div className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-8">
+            {certificates.map((cert, index) => (
+              <motion.div
+                key={cert.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.15 }}
+                className={`bg-whitepurple rounded-2xl overflow-hidden shadow-sm border-t-4 ${cert.accentBorder}`}
+              >
+                <div className="p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className={`${cert.iconBg} p-3 rounded-xl shrink-0`}>
+                      <cert.icon
+                        className="text-2xl"
+                        style={{ color: cert.iconColor }}
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-widest text-darkpurple font-vietnam mb-0.5">
+                        {cert.issuer}
+                      </p>
+                      <h3 className="text-base md:text-lg font-vietnam font-bold text-darkpurple leading-snug">
+                        {cert.title}
+                      </h3>
+                    </div>
+                  </div>
+                  <ul className="space-y-3">
+                    {cert.courses.map((course) => (
+                      <li key={course} className="flex items-start gap-3">
+                        <FaCheck
+                          className="text-darkpurple text-xs mt-1 shrink-0"
+                          aria-hidden="true"
+                        />
+                        <span className="text-sm text-black font-vietnam leading-relaxed">
+                          {course}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* My Approach Section */}
+      <section className="px-6 py-20 bg-whitepurple">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-14"
+          >
+            <p className="text-xs font-bold tracking-widest uppercase text-darkpurple font-vietnam mb-3">
+              How I work
+            </p>
+            <h2 className="text-3xl md:text-4xl font-vietnam font-bold text-darkpurple mb-5">
+              My Approach
+            </h2>
+            <p className="text-lg text-black font-vietnam max-w-2xl mx-auto leading-relaxed">
+              Great digital experiences don&apos;t happen by accident &mdash; they&apos;re built with intention at every step.
+            </p>
+          </motion.div>
+
+          <div className="space-y-5">
             {approaches.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
-                whileHover={{ x: 10 }}
-                className="flex items-center gap-5 bg-gradient-to-r from-whitepurple to-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
+                transition={{ duration: 0.5, delay: index * 0.12 }}
+                whileHover={{ x: 6, transition: { duration: 0.2 } }}
+                className="bg-white rounded-2xl px-6 py-7 md:px-10 md:py-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex items-center gap-4 md:gap-8"
               >
-                <div className={`p-3 rounded-full bg-white shadow-sm`}>
-                  <item.icon className={`text-3xl ${item.color}`} />
+                {/* Decorative step number */}
+                <span
+                  className="hidden sm:block font-fredoka font-bold text-6xl md:text-7xl text-lightpurple leading-none shrink-0 w-12 md:w-16 text-center select-none"
+                  aria-hidden="true"
+                >
+                  0{index + 1}
+                </span>
+
+                {/* Vertical accent bar */}
+                <div
+                  className={`hidden sm:block h-14 md:h-16 w-1 rounded-full shrink-0 ${item.bar}`}
+                  aria-hidden="true"
+                />
+
+                {/* Icon badge */}
+                <div className={`${item.iconBg} p-3 md:p-4 rounded-xl shadow-sm shrink-0`}>
+                  <item.icon className="text-xl md:text-2xl text-darkpurple" />
                 </div>
-                <p className="text-lg text-black font-vietnam">
-                  {item.text}
-                </p>
+
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-vietnam font-bold text-darkpurple text-lg md:text-xl mb-1.5">
+                    {item.headline}
+                  </h3>
+                  <p className="text-black font-vietnam text-sm leading-relaxed">
+                    {item.text}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -199,6 +359,9 @@ export default function About() {
           <JourneyTimeline />
         </div>
       </section>
+
+      {/* Fun Facts Section */}
+      <FunFacts />
     </main>
   );
 }

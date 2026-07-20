@@ -15,6 +15,7 @@ const beVietnamPro = Be_Vietnam_Pro({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://www.jcodestudio.com'),
   title: "jCode Studio LLC™ | Built to feel. Designed to last.",
   description: "jCode Studio LLC™ — Joan Karstrom's creative development studio. Frontend development and UX design that puts craft first, from concept to launch.",
   keywords: ["frontend developer", "UX designer", "React developer", "Next.js", "web development", "Joan Karstrom", "jCode Studio", "UI design", "brand identity"],
