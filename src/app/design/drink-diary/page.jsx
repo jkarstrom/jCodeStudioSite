@@ -79,6 +79,7 @@ const competitors = [
 const drinkDiaryGreen = "#19350C";
 const drinkDiaryOlive = "#687D31";
 
+
 /* ─── Small helpers ─────────────────────────────────────────────── */
 
 function ScoreBar({ label, value, highlight }) {
@@ -529,6 +530,227 @@ export default function DrinkDiaryCaseStudy() {
 
           </div>
           <p className="text-center text-xs text-gray-400 mt-6 font-vietnam">Low-fidelity wireframes — structural layout, no visual polish</p>
+        </div>
+      </section>
+
+      {/* ── Usability Study ──────────────────────────────────────── */}
+      <section className="py-24 px-6" style={{ background: "#f0f5e8" }}>
+        <div className="max-w-5xl mx-auto">
+
+          <p className="text-xs font-bold tracking-widest uppercase mb-4" style={{ color: drinkDiaryOlive }}>Usability Study</p>
+          <h2 className="font-fredoka font-bold text-4xl md:text-5xl mb-4 leading-tight" style={{ color: drinkDiaryGreen }}>
+            Testing before building
+          </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mb-12 leading-relaxed">
+            The full research plan and facilitator script for a hypothetical moderated usability study on the Drink Diary low-fidelity prototype — structured using the Google UX Design framework.
+          </p>
+
+
+          {/* Research Study Plan — structured table */}
+          <div className="rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+
+            {/* Document header */}
+            <div className="px-6 md:px-8 py-5" style={{ background: drinkDiaryGreen }}>
+              <p className="font-fredoka font-bold text-white text-xl md:text-2xl">Drink Diary &mdash; UX Research Study Plan</p>
+              <p className="text-white/40 text-xs mt-1 tracking-wide">Hypothetical study &middot; Spring 2024</p>
+            </div>
+
+            {/* Introduction */}
+            <div className="flex flex-col md:flex-row border-b border-gray-100" style={{ background: "#fdfcf8" }}>
+              <div className="md:w-44 shrink-0 px-5 py-6 md:flex md:items-center md:justify-center md:text-center" style={{ background: drinkDiaryGreen }}>
+                <span className="text-white text-xs font-bold font-vietnam leading-snug">Introduction</span>
+              </div>
+              <div className="flex-1 px-6 py-6">
+                <ul className="space-y-3">
+                  {[
+                    { label: "Title", value: "Usability study of Drink Diary — core logging and social discovery flows" },
+                    { label: "Author", value: "Joan Karstrom, UX Designer & Developer, joan@jcodestudio.com" },
+                    { label: "Stakeholders", value: "Joan Karstrom (Product Owner), iOS Development Team" },
+                    { label: "Date", value: "Spring 2024" },
+                    { label: "Project background", value: "The Drink Diary design team wants to learn how easy it is for new users to log a drink, share it to the social feed, and find past entries. Early prototype walkthroughs revealed that users hesitated during the log flow and never discovered social sharing on their own. The team wants to identify exactly where users get stuck and why." },
+                    { label: "Research goals", value: "Determine which elements of the log flow are difficult or unclear. Identify why users don’t engage with social sharing on first use. Understand how users navigate back to past entries." },
+                  ].map(({ label, value }) => (
+                    <li key={label} className="text-sm text-gray-600 leading-relaxed">
+                      <strong className="text-gray-700">{label}:</strong> {value}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Research Questions */}
+            <div className="flex flex-col md:flex-row border-b border-gray-100" style={{ background: "#fdfcf8" }}>
+              <div className="md:w-44 shrink-0 px-5 py-6 md:flex md:items-center md:justify-center md:text-center" style={{ background: drinkDiaryGreen }}>
+                <span className="text-white text-xs font-bold font-vietnam leading-snug">Research Questions</span>
+              </div>
+              <div className="flex-1 px-6 py-6">
+                <ul className="space-y-3">
+                  {[
+                    "What can we learn from the steps users take to log their first drink?",
+                    "Are there parts of the log flow where participants get stuck or confused?",
+                    "Do users understand how to share a log to the social feed — and do they want to?",
+                    "Can users locate a specific past entry through search and filters?",
+                    "Are there design changes we can make to reduce the time and friction of the core log flow?",
+                  ].map((q) => (
+                    <li key={q} className="flex items-start gap-2.5 text-sm text-gray-600">
+                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: drinkDiaryOlive }} />
+                      {q}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* KPIs */}
+            <div className="flex flex-col md:flex-row border-b border-gray-100" style={{ background: "#fdfcf8" }}>
+              <div className="md:w-44 shrink-0 px-5 py-6 md:flex md:items-center md:justify-center md:text-center" style={{ background: drinkDiaryGreen }}>
+                <span className="text-white text-xs font-bold font-vietnam leading-snug">Key Performance Indicators (KPIs)</span>
+              </div>
+              <div className="flex-1 px-6 py-6">
+                <ul className="space-y-3">
+                  {["User error rates", "Drop-off rates", "Time-on-task", "System Usability Scale (SUS)"].map((k) => (
+                    <li key={k} className="flex items-start gap-2.5 text-sm text-gray-600">
+                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: drinkDiaryOlive }} />
+                      {k}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Methodology */}
+            <div className="flex flex-col md:flex-row border-b border-gray-100" style={{ background: "#fdfcf8" }}>
+              <div className="md:w-44 shrink-0 px-5 py-6 md:flex md:items-center md:justify-center md:text-center" style={{ background: drinkDiaryGreen }}>
+                <span className="text-white text-xs font-bold font-vietnam leading-snug">Methodology</span>
+              </div>
+              <div className="flex-1 px-6 py-6">
+                <ul className="space-y-3">
+                  <li className="text-sm text-gray-600">Moderated usability study</li>
+                  {[
+                    { label: "Location", value: "United States, remote (each participant completes the study on their own iPhone)" },
+                    { label: "Date", value: "Sessions will take place over five consecutive days" },
+                    { label: "Length", value: "Each session will last 30–35 minutes, including a SUS survey following the tasks" },
+                    { label: "Compensation", value: "No compensation" },
+                  ].map(({ label, value }) => (
+                    <li key={label} className="text-sm text-gray-600 leading-relaxed">
+                      <strong className="text-gray-700">{label}:</strong> {value}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Participants */}
+            <div className="flex flex-col md:flex-row border-b border-gray-100" style={{ background: "#fdfcf8" }}>
+              <div className="md:w-44 shrink-0 px-5 py-6 md:flex md:items-center md:justify-center md:text-center" style={{ background: drinkDiaryGreen }}>
+                <span className="text-white text-xs font-bold font-vietnam leading-snug">Participants</span>
+              </div>
+              <div className="flex-1 px-6 py-6 space-y-4">
+                <div>
+                  <p className="text-sm text-gray-600 mb-3">Participants must be:</p>
+                  <ul className="space-y-2.5">
+                    {[
+                      "Daily smartphone users, aged 22–38",
+                      "Visit a café, bar, or restaurant at least once per week",
+                      "iPhone owner comfortable with mobile apps",
+                      "No prior exposure to Drink Diary",
+                    ].map((c) => (
+                      <li key={c} className="flex items-start gap-2.5 text-sm text-gray-600">
+                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: drinkDiaryOlive }} />
+                        {c}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <ul className="space-y-2.5 pt-3 border-t border-gray-100">
+                  {[
+                    "2 women, 2 men, and 1 nonbinary individual",
+                    "One participant who uses accessibility features (larger text or VoiceOver)",
+                    "Mix of social media habits — from frequent sharers to private users",
+                  ].map((c) => (
+                    <li key={c} className="flex items-start gap-2.5 text-sm text-gray-600">
+                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: drinkDiaryOlive }} />
+                      {c}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Script */}
+            <div className="flex flex-col md:flex-row" style={{ background: "#fdfcf8" }}>
+              <div className="md:w-44 shrink-0 px-5 py-6 md:flex md:items-center md:justify-center md:text-center" style={{ background: drinkDiaryGreen }}>
+                <span className="text-white text-xs font-bold font-vietnam leading-snug">Script</span>
+              </div>
+              <div className="flex-1 px-6 py-6 space-y-8">
+
+                <div>
+                  <p className="text-sm font-bold text-gray-700 mb-1">During the moderated usability study</p>
+                  <p className="text-xs text-gray-400 mb-5">Prompts are read aloud by the facilitator. Participants think aloud as they interact with the prototype.</p>
+                  <div className="space-y-5">
+                    {[
+                      {
+                        prompt: "If I told you this app was designed to help you keep track of drinks you love, what kinds of things would you expect to be able to do with it?",
+                        followup: null,
+                      },
+                      {
+                        prompt: "Imagine you just had an amazing matcha latte at a new café down the street and you don’t want to forget it. Show me how you’d log it using this app.",
+                        followup: "Was logging this drink easy or difficult? What felt natural? What was confusing or unexpected?",
+                      },
+                      {
+                        prompt: "Now imagine you want to share that matcha log with your friends on the app. Show me how you’d go about doing that.",
+                        followup: "Did you realize the sharing feature existed before I mentioned it? What was easy or challenging about finding it?",
+                      },
+                      {
+                        prompt: "Let’s say you logged a red wine a few weeks ago that you’d love to order again tonight. Show me how you’d find that entry.",
+                        followup: "What did you try first? What did you expect to see?",
+                      },
+                    ].map((item, i) => (
+                      <div key={i} className="space-y-2">
+                        <p className="text-sm text-gray-600 leading-relaxed">
+                          <strong className="text-gray-700">Prompt {i + 1}:</strong> {item.prompt}
+                        </p>
+                        {item.followup && (
+                          <p className="text-sm text-gray-500 leading-relaxed ml-5 pl-3 border-l-2 border-gray-100">
+                            <strong>Prompt {i + 1} follow-up:</strong> {item.followup}
+                          </p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="border-t border-gray-100 pt-6">
+                  <p className="text-sm font-bold text-gray-700 mb-1">After the moderated usability study</p>
+                  <p className="text-sm text-gray-500 mb-4">Participants will complete the System Usability Scale (SUS)</p>
+                  <p className="text-xs text-gray-400 mb-4">Participants will score the following ten statements by selecting one of five responses ranging from &ldquo;Strongly Disagree&rdquo; to &ldquo;Strongly Agree.&rdquo;</p>
+                  <ul className="space-y-2.5">
+                    {[
+                      "I think that I would use this app frequently.",
+                      "I find the app unnecessarily complex.",
+                      "I think the app is easy to use.",
+                      "I would need the support of a technical person to use this app.",
+                      "I find the various features in this app to be well integrated.",
+                      "I think there is too much inconsistency in this app.",
+                      "I imagine that most people would learn to use this app very quickly.",
+                      "I feel very confident using this app.",
+                      "I needed to learn a lot of things before I could use this app.",
+                      "The main flow to log a drink is clear.",
+                    ].map((s) => (
+                      <li key={s} className="flex items-start gap-2.5 text-sm text-gray-500">
+                        <span className="mt-1.5 w-1 h-1 rounded-full shrink-0 bg-gray-300" />
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
         </div>
       </section>
 
