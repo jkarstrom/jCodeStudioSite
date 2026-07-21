@@ -16,15 +16,15 @@ const beVietnamPro = Be_Vietnam_Pro({
 
 export const metadata = {
   metadataBase: new URL('https://www.jcodestudio.com'),
-  title: "jCode Studio LLC™ | Built to feel. Designed to last.",
-  description: "jCode Studio LLC™ — Joan Karstrom's creative development studio. Frontend development and UX design that puts craft first, from concept to launch.",
+  title: "jCode Studio LLC™ | Design that speaks before you do.",
+  description: "jCode Studio LLC™ — Joan Karstrom's creative development studio. Artistic websites rooted in your identity, from visual concept to polished launch.",
   keywords: ["frontend developer", "UX designer", "React developer", "Next.js", "web development", "Joan Karstrom", "jCode Studio", "UI design", "brand identity"],
   icons: {
     icon: './logos/Favicon.svg',
   },
   openGraph: {
-    title: "jCode Studio LLC™ | Built to feel. Designed to last.",
-    description: "jCode Studio LLC™ — Frontend development and UX design that puts craft first. Explore web projects, apps, and the studio's creative process.",
+    title: "jCode Studio LLC™ | Design that speaks before you do.",
+    description: "jCode Studio LLC™ — Artistic websites rooted in your identity. Explore web projects, design case studies, and the studio's creative process.",
     url: "https://www.jcodestudio.com",
     siteName: "jCode Studio",
     images: [

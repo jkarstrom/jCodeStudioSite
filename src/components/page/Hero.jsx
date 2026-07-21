@@ -62,12 +62,12 @@ export default function Hero() {
 
         {/* Tagline */}
         <p className="font-fredoka font-bold text-h2 text-transparent bg-clip-text leading-tight" style={{ backgroundImage: 'linear-gradient(135deg, #5e4875 0%, #7B4FA0 50%, #ec4899 100%)' }}>
-          Built to feel. Designed to last.
+          Design that speaks before you do.
         </p>
 
         {/* Sub-tagline */}
         <p className="text-body-lg text-darkpurple/60 max-w-lg leading-relaxed">
-          Frontend development and UX design that puts craft first — from concept to launch.
+          Artistic websites rooted in your identity &mdash; from visual concept to polished launch.
         </p>
 
         {/* CTAs */}
