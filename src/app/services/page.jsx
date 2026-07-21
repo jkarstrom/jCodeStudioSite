@@ -131,12 +131,58 @@ export default function ServicesPage() {
           {/* Bento grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[180px]">
 
-            {/* Big card */}
-            <div className="col-span-2 row-span-2 rounded-3xl bg-darkpurple p-8 flex flex-col justify-between overflow-hidden relative group">
-              <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-pink/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
-              <p className="text-white/40 text-xs font-bold tracking-widest uppercase font-vietnam">Craft</p>
-              <div>
-                <h3 className="font-fredoka font-bold text-3xl text-white mb-3">Aesthetics meet usability</h3>
+            {/* Big hero card */}
+            <div className="col-span-2 row-span-2 rounded-3xl bg-darkpurple flex flex-col justify-between overflow-hidden relative cursor-default">
+              {/* Dot grid texture */}
+              <div
+                className="absolute inset-0 pointer-events-none opacity-[0.15]"
+                style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1px)', backgroundSize: '18px 18px' }}
+                aria-hidden="true"
+              />
+              {/* Static glow orbs — no hover scale */}
+              <div className="absolute -bottom-10 -right-10 w-56 h-56 bg-pink/20 rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
+              <div className="absolute -top-8 -left-8 w-40 h-40 bg-lavender/15 rounded-full blur-2xl pointer-events-none" aria-hidden="true" />
+
+              {/* Mini browser mockup */}
+              <div className="relative z-10 px-6 pt-6">
+                <p className="text-white/30 text-xs font-bold tracking-widest uppercase font-vietnam mb-3">Craft</p>
+                <div
+                  className="w-full rounded-xl overflow-hidden border border-white/10"
+                  style={{ background: 'rgba(255,255,255,0.05)' }}
+                  aria-hidden="true"
+                >
+                  {/* Browser chrome */}
+                  <div className="flex items-center gap-1.5 px-3 py-2 border-b border-white/10" style={{ background: 'rgba(0,0,0,0.2)' }}>
+                    <div className="w-2 h-2 rounded-full bg-rose/70" />
+                    <div className="w-2 h-2 rounded-full bg-peach/70" />
+                    <div className="w-2 h-2 rounded-full bg-mint/70" />
+                    <div className="flex-1 mx-2 h-2 bg-white/10 rounded-full" />
+                  </div>
+                  {/* Mockup layout */}
+                  <div className="p-3 space-y-2">
+                    <div className="flex gap-2.5">
+                      <div className="flex-1 space-y-1.5">
+                        <div className="h-2.5 bg-white/20 rounded-full w-3/4" />
+                        <div className="h-1.5 bg-white/10 rounded-full w-full" />
+                        <div className="h-1.5 bg-white/10 rounded-full w-2/3" />
+                        <div className="h-4 bg-pink/30 rounded-full w-1/3 mt-1.5" />
+                      </div>
+                      <div className="w-1/3 h-16 bg-lavender/20 rounded-lg shrink-0" />
+                    </div>
+                    <div className="flex gap-1.5 pt-1">
+                      <div className="flex-1 h-5 bg-white/10 rounded-lg" />
+                      <div className="flex-1 h-5 bg-pink/15 rounded-lg" />
+                      <div className="flex-1 h-5 bg-lavender/15 rounded-lg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Text content */}
+              <div className="relative z-10 px-6 pb-6">
+                <h3 className="font-fredoka font-bold text-3xl md:text-4xl text-white mb-2 leading-tight">
+                  Aesthetics meet usability
+                </h3>
                 <p className="text-white/60 font-vietnam leading-relaxed text-sm">
                   I design engaging, user-friendly layouts that reflect your brand&apos;s identity
                   and guide users with intention and delight.
@@ -144,27 +190,69 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* Pill card */}
-            <div className="rounded-3xl bg-pink/40 p-6 flex flex-col justify-between border border-pink">
-              <span className="text-2xl">🎯</span>
+            {/* User-Centered Layouts card */}
+            <div className="rounded-3xl bg-pink/30 p-5 flex flex-col justify-between border border-pink/50 overflow-hidden hover:-translate-y-1.5 transition-transform duration-300 cursor-default">
+              {/* Mini wireframe layout */}
+              <div className="space-y-1.5" aria-hidden="true">
+                <div className="flex items-center gap-1.5 mb-1">
+                  <div className="w-4 h-4 rounded bg-darkpurple/20" />
+                  <div className="h-1.5 bg-darkpurple/15 rounded-full w-2/5" />
+                  <div className="flex-1" />
+                  <div className="h-1.5 bg-darkpurple/10 rounded-full w-4" />
+                  <div className="h-1.5 bg-darkpurple/10 rounded-full w-4" />
+                </div>
+                <div className="h-8 bg-pink/50 rounded-xl" />
+                <div className="flex gap-1.5">
+                  <div className="flex-1 h-4 bg-pink/30 rounded-lg" />
+                  <div className="flex-1 h-4 bg-pink/20 rounded-lg" />
+                  <div className="flex-1 h-4 bg-pink/30 rounded-lg" />
+                </div>
+              </div>
               <div>
                 <h3 className="font-semibold text-darkpurple font-vietnam text-sm">User-Centered Layouts</h3>
                 <p className="text-darkpurple/60 text-xs mt-1 font-vietnam">Every decision starts with the user&apos;s journey.</p>
               </div>
             </div>
 
-            {/* Pill card */}
-            <div className="rounded-3xl bg-lilac/60 p-6 flex flex-col justify-between border border-lilac">
-              <span className="text-2xl">🖼️</span>
+            {/* Brand-Driven Color card */}
+            <div className="rounded-3xl bg-lilac/60 p-5 flex flex-col justify-between border border-lilac overflow-hidden hover:-translate-y-1.5 transition-transform duration-300 cursor-default">
+              {/* Color swatch strip */}
+              <div aria-hidden="true">
+                <div className="flex gap-1 h-10 mb-2">
+                  <div className="flex-1 rounded-lg bg-darkpurple" />
+                  <div className="flex-1 rounded-lg bg-rose" />
+                  <div className="flex-1 rounded-lg bg-lavender" />
+                  <div className="flex-1 rounded-lg bg-periwinkle" />
+                  <div className="flex-1 rounded-lg bg-sky" />
+                </div>
+                <div className="h-1.5 bg-darkpurple/10 rounded-full w-2/3" />
+              </div>
               <div>
                 <h3 className="font-semibold text-darkpurple font-vietnam text-sm">Brand-Driven Color</h3>
                 <p className="text-darkpurple/60 text-xs mt-1 font-vietnam">Colors that reinforce emotion and build memory.</p>
               </div>
             </div>
 
-            {/* Wide card */}
-            <div className="col-span-2 md:col-span-1 rounded-3xl bg-white/80 backdrop-blur-sm p-6 flex flex-col justify-between border border-white shadow-sm">
-              <span className="text-2xl">✨</span>
+            {/* Motion & Micro-interactions card */}
+            <div className="col-span-2 md:col-span-1 rounded-3xl bg-white/80 backdrop-blur-sm p-5 flex flex-col justify-between border border-white shadow-sm overflow-hidden hover:-translate-y-1.5 transition-transform duration-300 cursor-default">
+              {/* Animation preview */}
+              <div className="space-y-2.5" aria-hidden="true">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full border-2 border-darkpurple/15 border-t-darkpurple/50 animate-spin motion-reduce:animate-none shrink-0" style={{ animationDuration: '2.5s' }} />
+                  <div className="flex-1 h-2 bg-lightpurple rounded-full overflow-hidden">
+                    <div className="h-full bg-darkpurple/40 rounded-full animate-pulse motion-reduce:animate-none" style={{ width: '65%' }} />
+                  </div>
+                </div>
+                <div className="flex gap-1.5">
+                  {[1, 0.7, 0.4].map((opacity, i) => (
+                    <div
+                      key={i}
+                      className="h-2.5 flex-1 bg-lavender rounded-full animate-pulse motion-reduce:animate-none"
+                      style={{ animationDelay: `${i * 150}ms`, opacity }}
+                    />
+                  ))}
+                </div>
+              </div>
               <div>
                 <h3 className="font-semibold text-darkpurple font-vietnam text-sm">Motion & Micro-interactions</h3>
                 <p className="text-darkpurple/60 text-xs mt-1 font-vietnam">Subtle animation that makes interfaces feel alive.</p>
