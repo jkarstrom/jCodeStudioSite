@@ -5,6 +5,7 @@ import React from 'react';
 const marqueItems = [
   'Frontend Development', '✦', 'Website Design', '✦',
   'UI/UX Strategy', '✦', 'Brand Identity', '✦',
+  'Scheduling & Booking', '✦', 'Gamification', '✦',
   'Online Presence Workshops', '✦', 'React & Next.js', '✦',
   'Tailwind CSS', '✦', 'Figma', '✦', 'Mobile Design', '✦',
 ];
@@ -35,14 +36,14 @@ export default function ServicesPage() {
 
         <div className="relative z-10 max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-darkpurple/10 text-darkpurple text-sm font-semibold px-4 py-1.5 rounded-full mb-8 font-vietnam">
-            jCode Studio — Services
+            jCode Studio — Built for Small Business
           </div>
           <h1 className="font-fredoka font-bold text-5xl md:text-7xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-darkpurple via-pink to-lilac leading-tight">
             What I Can Help<br />You Build
           </h1>
-          <p className="text-lg text-darkpurple/80 max-w-2xl mx-auto font-vietnam leading-relaxed">
-            From concept to launch — development, design, and strategy services
-            crafted with imagination and precision.
+          <p className="text-lg text-darkpurple max-w-2xl mx-auto font-vietnam leading-relaxed">
+            From polished speaker and professional sites to fully gamified experiences —
+            development, design, and strategy, matched to the energy your small business needs.
           </p>
         </div>
       </section>
@@ -58,6 +59,77 @@ export default function ServicesPage() {
         </div>
       </div>
 
+      {/* ── The Spectrum ──────────────────────────────────────── */}
+      <section id="spectrum" className="relative py-28 px-6 bg-white overflow-hidden">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-darkpurple text-xs font-bold tracking-widest uppercase mb-4 font-vietnam">01 — The Spectrum</p>
+          <h2 className="font-fredoka font-bold text-4xl md:text-6xl text-darkpurple mb-4 leading-tight">
+            One Studio.<br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-periwinkle via-pink to-rose">
+              Any Personality.
+            </span>
+          </h2>
+          <p className="text-darkpurple text-lg max-w-2xl mb-16 font-vietnam leading-relaxed">
+            Small businesses aren&apos;t one-size-fits-all, and neither are their websites.
+            I build across the full range — from clean, credible professional sites to
+            fully gamified, playful experiences — matched to the energy your brand needs.
+          </p>
+
+          {/* Gradient spectrum bar */}
+          <div
+            className="hidden md:block h-1.5 rounded-full mb-10 bg-gradient-to-r from-periwinkle via-pink to-rose"
+            aria-hidden="true"
+          />
+
+          <div className="grid md:grid-cols-4 gap-5">
+            {[
+              {
+                icon: '🎤',
+                label: 'Speaker & Professional',
+                body: 'Clean, credible sites built for trust — bios, press kits, and integrated scheduling so people can book you in a click.',
+                bg: 'bg-periwinkle/30',
+                border: 'border-periwinkle',
+              },
+              {
+                icon: '🏪',
+                label: 'Small Business & Service',
+                body: 'Polished, conversion-focused sites for local and service-based businesses — booking systems, service menus, and clear calls to action.',
+                bg: 'bg-sky/40',
+                border: 'border-sky',
+              },
+              {
+                icon: '✨',
+                label: 'Interactive & Playful',
+                body: 'Sites with personality — animation, micro-interactions, and custom illustration that make your brand memorable.',
+                bg: 'bg-pink/30',
+                border: 'border-pink',
+              },
+              {
+                icon: '🎮',
+                label: 'Fully Gamified',
+                body: 'Points, levels, badges, and game mechanics that turn visitors into engaged fans — for brands that want to stand out and have fun.',
+                bg: 'bg-rose/40',
+                border: 'border-rose',
+              },
+            ].map(({ icon, label, body, bg, border }) => (
+              <div
+                key={label}
+                className={`rounded-2xl p-6 border ${bg} ${border} flex flex-col gap-3 hover:-translate-y-1.5 transition-transform duration-300`}
+              >
+                <span className="text-3xl leading-none" aria-hidden="true">{icon}</span>
+                <h3 className="font-semibold text-darkpurple font-vietnam text-base">{label}</h3>
+                <p className="text-darkpurple text-sm font-vietnam leading-relaxed">{body}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-10 text-darkpurple text-base font-vietnam leading-relaxed">
+            Wherever you land on the spectrum, I&apos;ll work with your existing brand — or help
+            you build one from scratch.
+          </p>
+        </div>
+      </section>
+
       {/* ── Frontend Development ──────────────────────────────── */}
       <section
         id="frontend"
@@ -70,7 +142,7 @@ export default function ServicesPage() {
 
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[#58a6ff] text-xs font-bold tracking-widest uppercase mb-4 font-vietnam">01 — Frontend</p>
+            <p className="text-[#58a6ff] text-xs font-bold tracking-widest uppercase mb-4 font-vietnam">02 — Frontend</p>
             <h2 className="font-fredoka font-bold text-4xl md:text-5xl text-white mb-6 leading-tight">
               Frontend<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#58a6ff] to-[#a78bfa]">
@@ -122,7 +194,7 @@ export default function ServicesPage() {
       >
         <div className="max-w-6xl mx-auto">
           <div className="mb-12">
-            <p className="text-darkpurple/40 text-xs font-bold tracking-widest uppercase mb-3 font-vietnam">02 — Design</p>
+            <p className="text-darkpurple text-xs font-bold tracking-widest uppercase mb-3 font-vietnam">03 — Design</p>
             <h2 className="font-fredoka font-bold text-4xl md:text-6xl text-darkpurple leading-tight">
               Website Design
             </h2>
@@ -274,10 +346,10 @@ export default function ServicesPage() {
           className="absolute -right-8 top-1/2 -translate-y-1/2 font-fredoka font-bold pointer-events-none select-none"
           style={{ fontSize: '28vw', WebkitTextStroke: '1px rgba(255,255,255,0.04)', color: 'transparent' }}
           aria-hidden="true"
-        >03</p>
+        >04</p>
 
         <div className="max-w-5xl mx-auto py-12">
-          <p className="text-white/30 text-xs font-bold tracking-widest uppercase mb-4 font-vietnam">03 — Process</p>
+          <p className="text-white/80 text-xs font-bold tracking-widest uppercase mb-4 font-vietnam">04 — Process</p>
           <h2 className="font-fredoka font-bold text-4xl md:text-6xl text-white mb-4 leading-tight">
             UI/UX Strategy<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink to-lavender">
@@ -326,16 +398,18 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
           <div>
-            <p className="text-darkpurple/40 text-xs font-bold tracking-widest uppercase mb-4 font-vietnam">04 — Identity</p>
+            <p className="text-darkpurple text-xs font-bold tracking-widest uppercase mb-4 font-vietnam">05 — Identity</p>
             <h2 className="font-fredoka font-bold text-4xl md:text-6xl text-darkpurple leading-tight mb-6">
               Brand Identity<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ec4899] to-[#8b5cf6]">
                 & Visual Direction
               </span>
             </h2>
-            <p className="text-darkpurple/60 text-lg mb-8 font-vietnam leading-relaxed">
+            <p className="text-darkpurple text-lg mb-8 font-vietnam leading-relaxed">
               More than a logo — it&apos;s your energy, your voice, your vibe.
-              I craft brand systems that look amazing <em>and</em> work hard.
+              I craft brand systems that look amazing <em>and</em> work hard —
+              whether that means building on your existing brand or developing
+              one with you from scratch.
             </p>
             <ul className="space-y-4">
               {[
@@ -396,7 +470,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto pt-8 grid md:grid-cols-2 gap-16 items-start">
 
           <div>
-            <p className="text-white/30 text-xs font-bold tracking-widest uppercase mb-4 font-vietnam">05 — Workshops</p>
+            <p className="text-white/80 text-xs font-bold tracking-widest uppercase mb-4 font-vietnam">06 — Workshops</p>
             <h2 className="font-fredoka font-bold text-4xl md:text-6xl text-white leading-tight mb-6">
               Online Presence<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink to-lavender">

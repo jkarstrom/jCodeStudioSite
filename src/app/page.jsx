@@ -14,7 +14,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
             { value: '25k+', label: 'Users Reached' },
-            { value: '7+',   label: 'Projects Shipped' },
+            { value: '11+',  label: 'Clients Served' },
             { value: '4+',   label: 'Years Experience' },
             { value: '100%', label: 'Client Satisfaction' },
           ].map(({ value, label }) => (

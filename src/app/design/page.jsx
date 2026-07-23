@@ -19,8 +19,8 @@ const designWork = [
     description:
       "End-to-end product design for a social drink logging iOS app — from concept and user flows to high-fidelity Figma screens and a full component library.",
     tags: ["iOS", "Figma", "Mobile", "Design System"],
-    accentColor: "#19350C",
-    accentLight: "#687D31",
+    accentColor: "#ffe5d9",
+    accentLight: "#fce4ec",
     link: "/design/drink-diary",
     linkLabel: "View Case Study",
   },
@@ -30,8 +30,8 @@ const designWork = [
     description:
       "Designed the full gamified UI for a mission-driven student engagement platform — including onboarding, dashboard, and gamification flows.",
     tags: ["Web", "Figma", "Gamification", "UX Research"],
-    accentColor: "#1e3a5f",
-    accentLight: "#4a7cb5",
+    accentColor: "#d6eaf8",
+    accentLight: "#e3f2fd",
     link: "/design/safe-space",
     linkLabel: "View Case Study",
   },
@@ -41,8 +41,8 @@ const designWork = [
     description:
       "Designed an accessible, filterable crime data dashboard — balancing information density with clarity for a broad public audience.",
     tags: ["Dashboard", "Data Viz", "Accessibility", "Figma"],
-    accentColor: "#0d1f4a",
-    accentLight: "#a8bc2e",
+    accentColor: "#c8f0e8",
+    accentLight: "#d4e8d1",
     link: "/design/ggrc-site",
     linkLabel: "View Case Study",
   },
@@ -52,8 +52,8 @@ const designWork = [
     description:
       "Designed the GGRC's 2025 annual report as an interactive web experience — turning dense crime research data into a clear, compelling visual narrative.",
     tags: ["Editorial", "Data Viz", "Web", "Typography"],
-    accentColor: "#1a0f2e",
-    accentLight: "#5c3d8a",
+    accentColor: "#e8e0f0",
+    accentLight: "#c5cae9",
     link: "/design/ggrc-annual-report",
     linkLabel: "View Case Study",
   },
@@ -83,7 +83,7 @@ export default function DesignPage() {
             </span>
           </div>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-20">
-            <h1 className="font-fredoka font-bold text-h1 text-ink leading-[1.05] shrink-0">
+            <h1 className="font-fredoka font-bold text-h1 text-darkpurple leading-[1.05] shrink-0">
               Designed<br />with Intent.
             </h1>
             <p className="text-body-lg text-darkpurple max-w-xs leading-relaxed pb-1">
@@ -113,20 +113,23 @@ export default function DesignPage() {
                   background: `linear-gradient(145deg, ${featured.accentColor} 0%, ${featured.accentLight} 100%)`,
                 }}
               >
-                <span className="font-fredoka font-bold text-[11rem] text-white/[0.07] select-none absolute leading-none">
+                <span
+                  className="font-fredoka font-bold text-[11rem] text-darkpurple/10 select-none absolute leading-none"
+                  aria-hidden="true"
+                >
                   01
                 </span>
                 <div className="relative z-10 text-center px-6">
-                  <span className="font-fredoka font-bold text-2xl text-white/90 tracking-wide block mb-2">
+                  <span className="font-fredoka font-bold text-2xl text-darkpurple tracking-wide block mb-2">
                     {featured.category}
                   </span>
-                  <span className="text-white/45 text-xs font-bold tracking-widest uppercase">
+                  <span className="text-darkpurple text-xs font-bold tracking-widest uppercase">
                     Featured
                   </span>
                 </div>
               </div>
               <div className="p-10 md:p-14 flex flex-col justify-center">
-                <h2 className="font-fredoka font-bold text-h2 text-ink mb-4 group-hover:text-darkpurple transition-colors leading-tight">
+                <h2 className="font-fredoka font-bold text-h2 text-darkpurple mb-4 group-hover:text-brand-vivid transition-colors leading-tight">
                   {featured.title}
                 </h2>
                 <p className="text-gray-600 text-body-base mb-8 leading-relaxed max-w-md">
@@ -164,15 +167,18 @@ export default function DesignPage() {
                     background: `linear-gradient(145deg, ${item.accentColor} 0%, ${item.accentLight} 100%)`,
                   }}
                 >
-                  <span className="font-fredoka font-bold text-[6rem] text-white/[0.07] select-none absolute leading-none">
+                  <span
+                    className="font-fredoka font-bold text-[6rem] text-darkpurple/10 select-none absolute leading-none"
+                    aria-hidden="true"
+                  >
                     {String(i + 2).padStart(2, "0")}
                   </span>
-                  <span className="relative z-10 font-fredoka font-bold text-lg text-white/85 tracking-wide text-center px-4">
+                  <span className="relative z-10 font-fredoka font-bold text-lg text-darkpurple tracking-wide text-center px-4">
                     {item.category}
                   </span>
                 </div>
                 <div className="p-7 flex flex-col">
-                  <h2 className="font-fredoka font-bold text-h4 text-ink mb-2 group-hover:text-darkpurple transition-colors leading-tight">
+                  <h2 className="font-fredoka font-bold text-h4 text-darkpurple mb-2 group-hover:text-brand-vivid transition-colors leading-tight">
                     {item.title}
                   </h2>
                   <p className="text-gray-600 text-body-sm mb-5 leading-relaxed">

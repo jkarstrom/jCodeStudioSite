@@ -17,6 +17,8 @@ import {
   SiGithub,
   SiNodedotjs,
   SiAngular,
+  SiSanity,
+  SiSupabase,
 } from 'react-icons/si';
 
 const technologies = [
@@ -32,10 +34,12 @@ const technologies = [
   { name: 'Vercel',        color: 'bg-periwinkle',  icon: SiVercel,      iconColor: '#5e4875' },
   { name: 'Node.js',       color: 'bg-sage',        icon: SiNodedotjs,   iconColor: '#339933' },
   { name: 'Angular',       color: 'bg-pink',        icon: SiAngular,     iconColor: '#DD0031' },
+  { name: 'Sanity',        color: 'bg-blush',       icon: SiSanity,      iconColor: '#F03E2F' },
+  { name: 'Supabase',      color: 'bg-mint',        icon: SiSupabase,    iconColor: '#3ECF8E' },
 ];
 
-const row1 = technologies.slice(0, 6);
-const row2 = technologies.slice(6, 12);
+const row1 = technologies.slice(0, 7);
+const row2 = technologies.slice(7, 14);
 
 function MarqueeRow({ items, reverse = false }) {
   const doubled = [...items, ...items];
